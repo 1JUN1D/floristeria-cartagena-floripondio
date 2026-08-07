@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GYCC6CC1JR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GYCC6CC1JR');
+</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de Floristería Floripondio en Cartagena - 48 productos: bouquets de rosas, girasoles, tulipanes, cajas florales y ramos con chocolates. Entrega a domicilio.">
+    <meta name="keywords" content="catálogo flores Cartagena, bouquets, rosas, girasoles, tulipanes, cajas florales, Floristería Floripondio">
+    <title>Catálogo de Productos - Floristería Floripondio | Flores y Ramos Fúnebres en Cartagena</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Catálogo de Productos - Floristería Floripondio Cartagena">
+    <meta property="og:description" content="Bouquets, arreglos florales, coronas fúnebres y arreglos para velorios con entrega a domicilio en Cartagena">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://cartagenafloristeria.dondeseria.com/catalogo">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalog.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.webp">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="catalog-hero">
+        <div class="container">
+            <h1>Nuestro Catálogo</h1>
+            <p>Floristería Floripondio · Bouquets, arreglos florales y coronas fúnebres a domicilio en toda Cartagena</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="catalog-filters">
+        <div class="container">
+            <div class="catalog-search">
+                <input type="search" id="product-search" placeholder="Buscar por nombre o código (ej. rosas o 014)" aria-label="Buscar producto por nombre o código">
+            </div>
+            <div class="filters-container">
+                <span class="filter-label">Filtrar por:</span>
+                <button class="filter-btn active" data-filter="todos">Todos los Productos</button>
+                <button class="filter-btn" data-filter="rosas-rojas">Rosas Rojas</button>
+                <button class="filter-btn" data-filter="rosas-rosadas">Rosas Rosadas</button>
+                <button class="filter-btn" data-filter="rosas-blancas">Rosas Blancas</button>
+                <button class="filter-btn" data-filter="girasoles">Girasoles</button>
+                <button class="filter-btn" data-filter="cajas">Cajas y Sombrereras</button>
+                <button class="filter-btn" data-filter="jarrones">Jarrones</button>
+                <button class="filter-btn" data-filter="chocolates">Flores y Chocolates</button>
+                <button class="filter-btn" data-filter="globos">Con Globos</button>
+                <button class="filter-btn" data-filter="precio-bajo">Menos de $100.000</button>
+                <button class="filter-btn" data-filter="precio-medio">$100.000 - $200.000</button>
+                <button class="filter-btn" data-filter="precio-alto">Más de $200.000</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Counter -->
+    <div class="results-counter">
+        <div class="container">
+            Mostrando <strong id="results-count">48</strong> productos
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Los productos se generarán aquí -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="empty-state">
+                <h3>No se encontraron productos</h3>
+                <p>Cambia el filtro y encuentra más opciones para escoger</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">×</button>
+            <img src="" alt="" class="lightbox-image" id="lightbox-image">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-price"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- WhatsApp Button -->
+    <div id="whatsapp-button-container"></div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        // Datos de productos completos - Floristería Floripondio Cartagena
+const products = [
+    {
+        id: 1,
+        name: "Jarrón Atardecer en Rosa",
+        price: 150000,
+        image: "assets/foto1.webp",
+        description: "Jarrón de vidrio con rosas fucsia, durazno y crema entre follaje verde brillante, rematado con un lazo de satín rosa. Llega listo para ubicar en la mesa, sin necesidad de florero adicional.",
+        categories: ["rosas-rosadas", "jarrones", "precio-medio"]
+    },
+    {
+        id: 2,
+        name: "Bouquet Nube de Rosas",
+        price: 212500,
+        image: "assets/foto2.webp",
+        description: "Veinte rosas en tonos rosa y marfil enmarcadas con gypsophila y una envoltura tornasolada que cambia de color con la luz. Un ramo amplio, romántico y muy fotogénico.",
+        categories: ["rosas-rosadas", "precio-alto"]
+    },
+    {
+        id: 3,
+        name: "Corazón de 80 Rosas",
+        price: 375000,
+        image: "assets/foto3.webp",
+        description: "Caja corazón en blanco con cerca de ochenta rosas rojas dispuestas una a una hasta cubrir toda la superficie. Nuestra pieza más impactante para pedidas de mano y aniversarios grandes.",
+        categories: ["cajas", "rosas-rojas", "precio-alto"]
+    },
+    {
+        id: 4,
+        name: "Rosas Rojas con Ferrero",
+        price: 225000,
+        image: "assets/foto4.webp",
+        description: "Dieciocho rosas rojas con gypsophila y bombones Ferrero Rocher repartidos entre las flores, sobre envoltura negra mate. Flores y chocolate en un mismo regalo.",
+        categories: ["rosas-rojas", "chocolates", "precio-alto"]
+    },
+    {
+        id: 5,
+        name: "Ramo Pastel Encantado",
+        price: 200000,
+        image: "assets/foto5.webp",
+        description: "Mezcla de rosas en rosa, lila y bicolor con abundante gypsophila y envoltura en tono durazno. Suave, luminoso y perfecto para cumpleaños o para decir gracias.",
+        categories: ["rosas-rosadas", "precio-medio"]
+    },
+    {
+        id: 6,
+        name: "Caja Sol y Fuego",
+        price: 275000,
+        image: "assets/foto6.webp",
+        description: "Caja blanca desbordada de rosas rojas y girasoles, con solidago amarillo y gypsophila que le dan volumen. Un arreglo grande, alegre y de presencia inmediata.",
+        categories: ["cajas", "girasoles", "rosas-rojas", "precio-alto"]
+    },
+    {
+        id: 7,
+        name: "Caja Azul Caribe",
+        price: 150000,
+        image: "assets/foto7.webp",
+        description: "Rosas teñidas en azul cielo montadas en caja cuadrada color hueso, con gypsophila y espacio para tarjeta dedicatoria. Una propuesta distinta que siempre sorprende.",
+        categories: ["cajas", "precio-medio"]
+    },
+    {
+        id: 8,
+        name: "Sombrerera Girasoles y Chocolate",
+        price: 250000,
+        image: "assets/foto8.webp",
+        description: "Sombrerera de rayas negras y blancas repleta de girasoles frescos, acompañados de chocolates artesanales en cono dorado. Energía pura para regalar.",
+        categories: ["cajas", "girasoles", "chocolates", "precio-alto"]
+    },
+    {
+        id: 9,
+        name: "Docena de Rosas Blancas",
+        price: 150000,
+        image: "assets/foto9.webp",
+        description: "Doce rosas blancas con gypsophila, limonium y follaje verde en un ramo sobrio y elegante. Ideal para condolencias, agradecimientos o momentos solemnes.",
+        categories: ["rosas-blancas", "precio-medio"]
+    },
+    {
+        id: 10,
+        name: "Girasoles Noche y Oro",
+        price: 150000,
+        image: "assets/foto10.webp",
+        description: "Girasoles abiertos rodeados de una nube de gypsophila blanca, envueltos en papel negro con filos dorados. Contraste elegante y muy vistoso.",
+        categories: ["girasoles", "precio-medio"]
+    },
+    {
+        id: 11,
+        name: "Caja Girasoles y Rosas Rojas",
+        price: 262500,
+        image: "assets/foto11.webp",
+        description: "Caja blanca con girasoles y rosas rojas combinados en capas, con gypsophila entre las flores y soporte para tarjeta. Un centro generoso para fechas importantes.",
+        categories: ["cajas", "girasoles", "rosas-rojas", "precio-alto"]
+    },
+    {
+        id: 12,
+        name: "Ramo Durazno y Rosa",
+        price: 225000,
+        image: "assets/foto12.webp",
+        description: "Rosas durazno y rosadas alternadas con gypsophila, envueltas en papel estampado en tono nude. Delicado, femenino y de muy buen tamaño.",
+        categories: ["rosas-rosadas", "precio-alto"]
+    },
+    {
+        id: 13,
+        name: "Corazón Durazno con Bombones",
+        price: 187500,
+        image: "assets/foto13.webp",
+        description: "Caja corazón con rosas color durazno y cuatro bombones dorados dispuestos entre las flores. Un detalle dulce en formato compacto.",
+        categories: ["cajas", "chocolates", "precio-medio"]
+    },
+    {
+        id: 14,
+        name: "Jarrón Jardín Coral",
+        price: 350000,
+        image: "assets/foto14.webp",
+        description: "Composición alta en jarrón floreado con gerberas rosadas, rosas coral, rosas jardineras y limonium. Parece un jardín recién cortado y dura varios días.",
+        categories: ["jarrones", "precio-alto"]
+    },
+    {
+        id: 15,
+        name: "Sombrerera con Globos",
+        price: 187500,
+        image: "assets/foto15.webp",
+        description: "Sombrerera blanca con rosas durazno, pompones y astromelias, coronada por una burbuja transparente con globos rosa y blanco. Pensada para cumpleaños.",
+        categories: ["cajas", "globos", "precio-medio"]
+    },
+    {
+        id: 16,
+        name: "Cofre Rojo con Ferrero",
+        price: 125000,
+        image: "assets/foto16.webp",
+        description: "Caja cuadrada con rosas rojas, gypsophila y bombones Ferrero Rocher sobre las flores. Los chocolates se cotizan aparte y se agregan a tu gusto.",
+        categories: ["cajas", "rosas-rojas", "chocolates", "precio-medio"]
+    },
+    {
+        id: 17,
+        name: "Sombrerera 50 Rosas y Globos",
+        price: 275000,
+        image: "assets/foto17.webp",
+        description: "Cincuenta rosas rojas montadas en cúpula sobre sombrerera blanca, con dos globos metalizados en forma de corazón. Un regalo de alto impacto.",
+        categories: ["cajas", "rosas-rojas", "globos", "precio-alto"]
+    },
+    {
+        id: 18,
+        name: "Ramo Clásico de 12 Rosas",
+        price: 137500,
+        image: "assets/foto18.webp",
+        description: "Doce rosas rojas con gypsophila y envoltura negra translúcida rematada en cinta roja. El clásico de siempre, bien hecho y bien presentado.",
+        categories: ["rosas-rojas", "precio-medio"]
+    },
+    {
+        id: 19,
+        name: "Sombrerera Arcoíris Pastel",
+        price: 350000,
+        image: "assets/foto19.webp",
+        description: "Sombrerera blanca con rosas en rosa, lila, durazno y marfil formando una cúpula multicolor, con dos globos corazón en oro rosado. Nuestro arreglo más celebrado.",
+        categories: ["cajas", "rosas-rosadas", "globos", "precio-alto"]
+    },
+    {
+        id: 20,
+        name: "Ramo Dulce Lavanda",
+        price: 225000,
+        image: "assets/foto20.webp",
+        description: "Rosas lila, rosadas y marfil con gypsophila y envoltura rosa en capas. Una paleta poco común que se lleva todas las miradas.",
+        categories: ["rosas-rosadas", "precio-alto"]
+    },
+    {
+        id: 21,
+        name: "Ramo Pasión Roja",
+        price: 150000,
+        image: "assets/foto21.webp",
+        description: "Rosas rojas cubiertas de gypsophila blanca sobre envoltura negra en pétalos y cinta de satín. Contraste dramático y muy romántico.",
+        categories: ["rosas-rojas", "precio-medio"]
+    },
+    {
+        id: 22,
+        name: "Corazón Rojo con Ferrero",
+        price: 200000,
+        image: "assets/foto22.webp",
+        description: "Caja corazón con rosas rojas y cinco bombones Ferrero Rocher entre las flores, con gypsophila al fondo. Clásico y goloso a la vez.",
+        categories: ["cajas", "rosas-rojas", "chocolates", "precio-medio"]
+    },
+    {
+        id: 23,
+        name: "Ramo Aniversario Personalizado",
+        price: 312500,
+        image: "assets/foto23.webp",
+        description: "Ramo grande de rosas rojas con el número que elijas trabajado en gypsophila sobre las flores, envuelto en organza negra. Ideal para aniversarios y cumpleaños redondos.",
+        categories: ["rosas-rojas", "precio-alto"]
+    },
+    {
+        id: 24,
+        name: "Detalle de 6 Rosas",
+        price: 62500,
+        image: "assets/foto24.webp",
+        description: "Seis rosas rojas con gypsophila en envoltura negra y transparente. Pequeño, económico y suficiente para alegrar cualquier día.",
+        categories: ["rosas-rojas", "precio-bajo"]
+    },
+    {
+        id: 25,
+        name: "Ramo Elegancia Roja",
+        price: 212500,
+        image: "assets/foto25.webp",
+        description: "Veinticuatro rosas rojas con gypsophila, envoltura negra ribeteada en blanco y tarjeta negra con detalle dorado. Elegancia sin exagerar.",
+        categories: ["rosas-rojas", "precio-alto"]
+    },
+    {
+        id: 26,
+        name: "Jarrón Rojo Enamorado",
+        price: 150000,
+        image: "assets/foto26.webp",
+        description: "Rosas rojas y rosadas en jarrón de vidrio con follaje verde y lazo durazno. Llega hidratado y listo para ubicar donde quieras.",
+        categories: ["jarrones", "rosas-rojas", "precio-medio"]
+    },
+    {
+        id: 27,
+        name: "Ramo Sol de Getsemaní",
+        price: 312500,
+        image: "assets/foto27.webp",
+        description: "Gerberas amarillas, rosas naranja y crema, eucalipto y gypsophila en envoltura marmolada. Un ramo cálido y grande, muy del color de Cartagena.",
+        categories: ["mix", "precio-alto"]
+    },
+    {
+        id: 28,
+        name: "Ramo Rosa Serenata",
+        price: 250000,
+        image: "assets/foto28.webp",
+        description: "Rosas rosadas y marfil con gypsophila y una cinta de satín cruzada sobre el ramo. La cinta va incluida en el precio.",
+        categories: ["rosas-rosadas", "precio-alto"]
+    },
+    {
+        id: 29,
+        name: "Sombrerera Graduación",
+        price: 225000,
+        image: "assets/foto29.webp",
+        description: "Rosas rojas en cúpula sobre sombrerera negra, con birrete de grado y tarjeta negra con dorado. Nuestro arreglo para grados y logros.",
+        categories: ["cajas", "rosas-rojas", "precio-alto"]
+    },
+    {
+        id: 30,
+        name: "Ramo Lazo Negro",
+        price: 275000,
+        image: "assets/foto30.webp",
+        description: "Rosas rojas rodeadas de gypsophila blanca, envoltura negra en pétalos y cinta ancha de satín cruzada. Sobrio, grande y muy elegante.",
+        categories: ["rosas-rojas", "precio-alto"]
+    },
+    {
+        id: 31,
+        name: "Trío de Girasoles",
+        price: 87500,
+        image: "assets/foto31.webp",
+        description: "Tres girasoles en composición vertical con helecho, gypsophila y envoltura clara con lazo amarillo. Sencillo, luminoso y muy bien logrado.",
+        categories: ["girasoles", "precio-bajo"]
+    },
+    {
+        id: 32,
+        name: "Girasoles Brisa de Bocagrande",
+        price: 87500,
+        image: "assets/foto32.webp",
+        description: "Tres girasoles con solidago y gypsophila en envoltura crema con lazo rosa. Perfecto para llevar buena energía sin gastar de más.",
+        categories: ["girasoles", "precio-bajo"]
+    },
+];
+
+        // Estado de filtro y búsqueda
+        let currentFilter = 'todos';
+        let searchTerm = '';
+
+        // Código de referencia: 001, 002, 003...
+        function productCode(p) {
+            return String(p.id).padStart(3, '0');
+        }
+
+        // URL absoluta de la foto del producto
+        function productPhotoUrl(p) {
+            return 'http://cartagenafloristeria.dondeseria.com/' + p.image.replace(/^\//, '');
+        }
+
+        // Normaliza texto para búsqueda sin tildes (u0300-u036f = acentos combinantes)
+        function normalizeText(t) {
+            return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+        }
+
+        // Renderizar productos
+        function renderProducts() {
+            const filter = currentFilter;
+            const grid = document.getElementById('products-grid');
+            const emptyState = document.getElementById('empty-state');
+            const resultsCount = document.getElementById('results-count');
+
+            let filteredProducts = products;
+
+            if (filter !== 'todos') {
+                filteredProducts = products.filter(product =>
+                    product.categories.includes(filter)
+                );
+            }
+
+            // Búsqueda por nombre o código
+            if (searchTerm.trim()) {
+                const q = normalizeText(searchTerm.trim());
+                filteredProducts = filteredProducts.filter(product =>
+                    normalizeText(product.name).includes(q) ||
+                    productCode(product).includes(q)
+                );
+            }
+
+            if (filteredProducts.length === 0) {
+                grid.style.display = 'none';
+                emptyState.classList.add('active');
+                resultsCount.textContent = '0';
+                return;
+            }
+
+            grid.style.display = 'grid';
+            emptyState.classList.remove('active');
+            resultsCount.textContent = filteredProducts.length;
+
+            grid.innerHTML = filteredProducts.map(product => `
+                <div class="product-card" data-categories="${product.categories.join(' ')}">
+                    <div class="product-image-container" onclick="openLightbox('${product.image}', '${product.name}', '${formatPrice(product.price)}')">
+                        <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                        <div class="zoom-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                                <line x1="11" y1="8" x2="11" y2="14"/>
+                                <line x1="8" y1="11" x2="14" y2="11"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        ${product.oldPrice ? `<div class="product-offer-badge">OFERTA</div>` : ''}
+                        <div class="product-ref">Ref. ${productCode(product)}</div>
+                        <h3 class="product-name">${product.name}</h3>
+                        <div class="product-description">${product.description}</div>
+                        <div class="product-footer">
+                            <div>
+                                <span class="price-label ${product.oldPrice ? 'price-label-old' : ''}">${product.oldPrice ? formatPrice(product.oldPrice) : 'Desde'}</span>
+                                <div class="product-price">${formatPrice(product.price)}</div>
+                            </div>
+                            <a href="https://wa.me/573043846071?text=${encodeURIComponent('Hola, me interesa el producto: ' + product.name + ' (Ref. ' + productCode(product) + ') - ' + formatPrice(product.price) + ' | Foto: ' + productPhotoUrl(product))}"
+                               class="btn-order"
+                               target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                Pedir Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Formatear precio
+        function formatPrice(price) {
+            return '$' + price.toLocaleString('es-CO');
+        }
+
+        // Filtros
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                renderProducts();
+                window.scrollTo({ top: 400, behavior: 'smooth' });
+            });
+        });
+
+        // Buscador por nombre o código
+        document.getElementById('product-search').addEventListener('input', function() {
+            searchTerm = this.value;
+            renderProducts();
+        });
+
+        // Lightbox
+        function openLightbox(image, name, price) {
+            document.getElementById('lightbox-image').src = image;
+            document.getElementById('lightbox-image').alt = name;
+            document.getElementById('lightbox-title').textContent = name;
+            document.getElementById('lightbox-price').textContent = price;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Botón volver arriba
+        const scrollTopBtn = document.getElementById('scroll-top');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 600) scrollTopBtn.classList.add('visible');
+            else scrollTopBtn.classList.remove('visible');
+        });
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Render inicial
+        renderProducts();
+    </script>
+</body>
+</html>
