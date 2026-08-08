@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Coronas Fúnebres y Ramos Fúnebres de Lujo en Cartagena - TR Florería. Homenajes florales para velación, exequias y funerales con entrega prioritaria a salas de velación, iglesias y cementerios. Pedidos por WhatsApp 304 384 6071.">
+    <meta name="description" content="Coronas Fúnebres y Ramos Fúnebres de Lujo en Cartagena - Floristería Floripondio. Homenajes florales para velación, exequias y funerales con entrega prioritaria a salas de velación, iglesias y cementerios. Pedidos por WhatsApp 304 384 6071.">
     <meta name="keywords" content="ramo fúnebre Cartagena, ramos fúnebres Cartagena, corona fúnebre Cartagena, coronas fúnebres Cartagena, arreglos florales para velorios Cartagena, flores para funerales Cartagena, flores para condolencias, arreglos para exequias, corazones fúnebres, cruces fúnebres, arreglos fúnebres a domicilio Cartagena, floristería Cartagena">
-    <title>Coronas y Ramos Fúnebres de Lujo en Cartagena | TR Florería</title>
+    <meta name="theme-color" content="#1A3B30">
+    <title>Coronas y Ramos Fúnebres de Lujo en Cartagena | Floristería Floripondio</title>
 
     <!-- Canonical -->
     <link rel="canonical" href="https://cartagenafloristeria.dondeseria.com/landing/ramos-funebres-cartagena.html">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Coronas y Ramos Fúnebres de Lujo en Cartagena - TR Florería">
+    <meta property="og:title" content="Coronas y Ramos Fúnebres de Lujo en Cartagena - Floristería Floripondio">
     <meta property="og:description" content="Homenajes florales de lujo para velaciones y funerales en Cartagena. Entrega prioritaria a salas de velación, iglesias y cementerios.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cartagenafloristeria.dondeseria.com/landing/ramos-funebres-cartagena.html">
@@ -60,517 +61,621 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --negro: #0C0C10;
-            --carbon: #14141B;
-            --carbon-claro: #1D1D27;
-            --oro: #C9A24B;
-            --oro-claro: #E8CE93;
-            --oro-oscuro: #9A7A33;
-            --marfil: #F4EFE6;
-            --marfil-suave: #EFE9DC;
-            --gris-perla: #B9B4A8;
-            --texto-oscuro: #23232B;
+            /* Paleta mármol · verde pino · oro envejecido — tomada del logo Floripondio */
+            --marfil: #F7F4EF;
+            --marmol: #EFEAE1;
+            --blanco: #FFFFFF;
+            --linea: #E4DED2;
+            --linea-fuerte: #D6CDBC;
+
+            --verde: #1A3B30;
+            --verde-medio: #2E5748;
+            --verde-claro: #4A6D5C;
+
+            --oro: #A98A4A;
+            --oro-claro: #C9A96E;
+            --oro-oscuro: #86682F;
+
+            --texto: #23262A;
+            --texto-suave: #5C6167;
+            --texto-tenue: #83888E;
+
+            /* usado sobre fondos oscuros */
+            --gris-perla: #BCCBC1;
             --wa: #25D366;
+
+            --sombra-suave: 0 1px 2px rgba(26,59,48,.04), 0 8px 28px rgba(26,59,48,.07);
+            --sombra-alta: 0 2px 6px rgba(26,59,48,.06), 0 26px 60px rgba(26,59,48,.14);
         }
+
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Jost', sans-serif;
-            color: var(--marfil);
-            background: var(--negro);
-            line-height: 1.6;
+            color: var(--texto);
+            background: var(--marfil);
+            line-height: 1.65;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
         }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        ::selection { background: var(--verde); color: var(--marfil); }
+
+        .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+        /* Ritmo vertical unificado */
+        section { padding: clamp(64px, 8vw, 112px) 20px; }
 
         .gold-divider {
-            width: 90px; height: 1px;
+            width: 120px; height: 1px;
             background: linear-gradient(90deg, transparent, var(--oro), transparent);
-            margin: 1.5rem auto;
+            margin: 1.6rem auto 0;
             position: relative;
         }
         .gold-divider::after {
-            content: '✦'; position: absolute; top: -0.7rem; left: 50%;
+            content: '✦'; position: absolute; top: -0.72rem; left: 50%;
             transform: translateX(-50%);
-            color: var(--oro); font-size: 0.8rem; background: transparent;
+            color: var(--oro); font-size: 0.75rem;
+            background: transparent;
         }
 
         /* ===================================
-           HERO — solemne y de lujo
+           HERO — mármol sereno
            =================================== */
         .hero {
             background:
-                radial-gradient(ellipse at 50% -20%, rgba(201,162,75,0.18) 0%, transparent 55%),
-                linear-gradient(180deg, #101018 0%, var(--negro) 100%);
-            padding: 90px 20px 70px;
+                radial-gradient(ellipse at 50% -10%, rgba(169,138,74,0.13) 0%, transparent 58%),
+                radial-gradient(ellipse at 12% 90%, rgba(26,59,48,0.06) 0%, transparent 55%),
+                linear-gradient(180deg, var(--blanco) 0%, var(--marfil) 62%, var(--marmol) 100%);
+            padding: clamp(48px, 6vw, 76px) 20px clamp(56px, 7vw, 84px);
             text-align: center;
             position: relative;
-            border-bottom: 1px solid rgba(201,162,75,0.25);
+            border-bottom: 1px solid var(--linea);
+        }
+
+        .hero-logo {
+            width: clamp(94px, 12vw, 130px);
+            height: auto;
+            margin: 0 auto 1.6rem;
+            display: block;
+            mix-blend-mode: multiply;
         }
 
         .hero-eyebrow {
-            font-size: 0.85rem;
-            letter-spacing: 4px;
+            font-size: 0.72rem;
+            letter-spacing: 4.5px;
             text-transform: uppercase;
-            color: var(--oro);
-            margin-bottom: 1.25rem;
+            color: var(--oro-oscuro);
+            font-weight: 500;
+            margin-bottom: 1.1rem;
         }
 
         .hero h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 3.4rem;
-            font-weight: 600;
-            line-height: 1.15;
-            color: var(--marfil);
-            max-width: 900px;
-            margin: 0 auto 0.75rem;
+            font-size: clamp(2.3rem, 5.2vw, 3.9rem);
+            font-weight: 500;
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+            color: var(--verde);
+            max-width: 940px;
+            margin: 0 auto 0.9rem;
         }
 
         .hero h1 em {
             font-style: italic;
-            color: var(--oro-claro);
+            font-weight: 500;
+            color: var(--oro-oscuro);
         }
 
         .hero .subtitle {
             font-family: 'Cormorant Garamond', serif;
             font-style: italic;
-            font-size: 1.5rem;
-            color: var(--gris-perla);
-            margin-bottom: 1.5rem;
+            font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+            color: var(--texto-suave);
+            font-weight: 400;
         }
 
         .hero p.lead {
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             font-weight: 300;
-            max-width: 760px;
-            margin: 0 auto 2rem;
-            color: var(--gris-perla);
+            max-width: 720px;
+            margin: 1.9rem auto 0;
+            color: var(--texto-suave);
         }
 
-        .hero p.lead strong { color: var(--marfil); font-weight: 500; }
+        .hero p.lead strong { color: var(--verde); font-weight: 500; }
 
         .hero-keywords {
             display: flex; flex-wrap: wrap; justify-content: center;
-            gap: 0.75rem; margin: 2rem auto 2.5rem; max-width: 900px;
+            gap: 0.55rem 0.7rem;
+            margin: 2.1rem auto 2.4rem;
+            max-width: 860px;
         }
 
         .keyword-badge {
-            padding: 0.6rem 1.4rem;
-            border: 1px solid rgba(201,162,75,0.4);
-            border-radius: 2px;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            color: var(--oro-claro);
-            background: rgba(201,162,75,0.06);
+            padding: 0.42rem 1.05rem;
+            border: 1px solid var(--linea-fuerte);
+            border-radius: 100px;
+            font-size: 0.74rem;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: var(--texto-suave);
+            background: rgba(255,255,255,0.7);
         }
 
+        /* Botón principal — verde pino con filo dorado */
         .cta-hero {
-            display: inline-block;
-            padding: 1.15rem 3.2rem;
-            background: linear-gradient(135deg, var(--oro) 0%, var(--oro-oscuro) 100%);
-            color: var(--negro);
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            padding: 1.05rem 3rem;
+            background: var(--verde);
+            color: var(--marfil);
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1.05rem;
-            letter-spacing: 1.5px;
+            font-weight: 500;
+            font-size: 0.92rem;
+            letter-spacing: 2.2px;
             text-transform: uppercase;
             border-radius: 2px;
-            box-shadow: 0 10px 30px rgba(201,162,75,0.25);
-            transition: all 0.3s ease;
+            border: 1px solid var(--verde);
+            box-shadow: 0 10px 28px rgba(26,59,48,0.2);
+            transition: background .3s ease, transform .3s ease, box-shadow .3s ease, color .3s ease;
         }
 
         .cta-hero:hover {
             transform: translateY(-3px);
-            box-shadow: 0 14px 40px rgba(201,162,75,0.4);
-            background: linear-gradient(135deg, var(--oro-claro) 0%, var(--oro) 100%);
+            background: var(--verde-medio);
+            box-shadow: 0 16px 38px rgba(26,59,48,0.28);
+            color: #fff;
         }
 
         .hero-note {
-            margin-top: 1.25rem;
-            font-size: 0.85rem;
-            color: var(--gris-perla);
-            letter-spacing: 1px;
+            margin-top: 1.15rem;
+            font-size: 0.8rem;
+            color: var(--texto-tenue);
+            letter-spacing: 1.4px;
         }
 
         /* ===================================
-           CINTA DE DESCUENTO
+           CINTA
            =================================== */
         .promo-ribbon {
-            background: linear-gradient(90deg, var(--oro-oscuro), var(--oro), var(--oro-oscuro));
-            color: var(--negro);
+            background: var(--verde);
+            color: var(--marfil);
             text-align: center;
-            padding: 0.8rem 20px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            font-size: 0.9rem;
+            padding: 0.95rem 20px;
+            font-weight: 400;
+            letter-spacing: 2.6px;
+            font-size: 0.76rem;
             text-transform: uppercase;
         }
+        .promo-ribbon span { color: var(--oro-claro); }
 
         /* ===================================
-           SECCIONES
+           ENCABEZADOS DE SECCIÓN
            =================================== */
         .section-eyebrow {
             text-align: center;
-            font-size: 0.8rem;
-            letter-spacing: 4px;
+            font-size: 0.7rem;
+            letter-spacing: 4.5px;
             text-transform: uppercase;
-            color: var(--oro);
-            margin-bottom: 0.75rem;
+            color: var(--oro-oscuro);
+            font-weight: 500;
+            margin-bottom: 0.85rem;
         }
 
         .section-title {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2.7rem;
-            font-weight: 600;
+            font-size: clamp(1.95rem, 4vw, 2.9rem);
+            font-weight: 500;
             text-align: center;
-            color: var(--marfil);
-            line-height: 1.2;
+            color: var(--verde);
+            line-height: 1.18;
+            letter-spacing: -0.01em;
         }
 
         .section-subtitle {
             text-align: center;
-            color: var(--gris-perla);
+            color: var(--texto-suave);
             font-weight: 300;
-            font-size: 1.05rem;
-            max-width: 720px;
-            margin: 1rem auto 0;
+            font-size: 1.01rem;
+            max-width: 700px;
+            margin: 1.5rem auto 0;
         }
 
         /* ===================================
            CATÁLOGO
            =================================== */
-        .products-section {
-            padding: 80px 20px;
-            background: var(--negro);
-        }
+        .products-section { background: var(--marfil); }
 
+        /* Filtros discretos, tipo índice editorial */
         .filter-tabs {
-            display: flex; justify-content: center; gap: 0.75rem;
-            margin: 2.5rem 0 1rem; flex-wrap: wrap;
+            display: flex; justify-content: center;
+            gap: 0.35rem 1.9rem;
+            margin: 3rem 0 0; flex-wrap: wrap;
+            padding-bottom: 1.1rem;
+            border-bottom: 1px solid var(--linea);
         }
 
         .filter-tab {
-            padding: 0.7rem 1.6rem;
+            padding: 0.35rem 0.1rem;
             background: transparent;
-            border: 1px solid rgba(201,162,75,0.45);
-            color: var(--oro-claro);
-            border-radius: 2px;
+            border: none;
+            border-bottom: 1px solid transparent;
+            color: var(--texto-suave);
             cursor: pointer;
             font-family: 'Jost', sans-serif;
-            font-weight: 500;
-            font-size: 0.9rem;
-            letter-spacing: 1.5px;
+            font-weight: 400;
+            font-size: 0.78rem;
+            letter-spacing: 2.2px;
             text-transform: uppercase;
-            transition: all 0.3s ease;
+            transition: color .25s ease, border-color .25s ease;
         }
 
-        .filter-tab.active, .filter-tab:hover {
-            background: var(--oro);
-            color: var(--negro);
-            border-color: var(--oro);
+        .filter-tab:hover { color: var(--verde); }
+
+        .filter-tab.active {
+            color: var(--verde);
+            font-weight: 500;
+            border-bottom-color: var(--oro);
         }
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+            gap: clamp(1.6rem, 2.6vw, 2.4rem);
+            margin-top: clamp(2.4rem, 4vw, 3.4rem);
         }
 
         .product-card {
-            background: var(--carbon);
-            border: 1px solid rgba(201,162,75,0.22);
-            border-radius: 4px;
+            background: var(--blanco);
+            border: 1px solid var(--linea);
+            border-radius: 3px;
             overflow: hidden;
-            transition: all 0.35s ease;
+            transition: transform .45s cubic-bezier(.22,1,.36,1), box-shadow .45s ease, border-color .45s ease;
             display: flex;
             flex-direction: column;
+            box-shadow: var(--sombra-suave);
         }
 
         .product-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(201,162,75,0.6);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.55), 0 0 0 1px rgba(201,162,75,0.25);
+            transform: translateY(-6px);
+            border-color: var(--oro-claro);
+            box-shadow: var(--sombra-alta);
         }
 
         .product-image-container {
             position: relative; width: 100%;
             aspect-ratio: 1 / 1; overflow: hidden;
-            background: #E9EEF4;
+            background: var(--marmol);
         }
 
         .product-image {
             width: 100%; height: 100%;
             object-fit: cover;
-            transition: transform 0.4s ease;
+            transition: transform .7s cubic-bezier(.22,1,.36,1);
         }
 
-        .product-card:hover .product-image { transform: scale(1.06); }
+        .product-card:hover .product-image { transform: scale(1.05); }
 
+        /* Código de pieza — sello discreto */
         .discount-badge {
             position: absolute; top: 14px; left: 14px;
-            background: rgba(12,12,16,0.85);
-            border: 1px solid var(--oro);
-            color: var(--oro-claro);
-            font-size: 0.7rem;
+            background: rgba(255,255,255,0.92);
+            border: 1px solid var(--linea-fuerte);
+            color: var(--verde);
+            font-family: 'Jost', sans-serif;
+            font-size: 0.66rem;
+            font-weight: 500;
             letter-spacing: 2px;
-            text-transform: uppercase;
-            padding: 0.4rem 0.9rem;
+            padding: 0.35rem 0.8rem;
             border-radius: 2px;
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(6px);
         }
 
         .product-info {
-            padding: 1.6rem 1.5rem 1.75rem;
+            padding: 1.7rem 1.6rem 1.6rem;
             display: flex; flex-direction: column; flex: 1;
         }
 
         .product-name {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.65rem;
+            font-size: 1.62rem;
             font-weight: 600;
-            color: var(--oro-claro);
-            margin-bottom: 0.75rem;
-            line-height: 1.2;
+            color: var(--verde);
+            margin-bottom: 0.55rem;
+            line-height: 1.18;
+        }
+
+        /* filete dorado bajo el nombre */
+        .product-name::after {
+            content: ''; display: block;
+            width: 34px; height: 1px;
+            background: var(--oro);
+            margin-top: 0.7rem;
         }
 
         .product-description {
-            color: var(--gris-perla);
+            color: var(--texto-suave);
             font-weight: 300;
-            line-height: 1.65;
-            margin-bottom: 1.4rem;
-            font-size: 0.93rem;
+            line-height: 1.7;
+            margin: 0.9rem 0 1.5rem;
+            font-size: 0.9rem;
             flex: 1;
         }
 
         .product-footer {
             display: flex; justify-content: space-between; align-items: flex-end;
-            padding-top: 1.1rem;
-            border-top: 1px solid rgba(201,162,75,0.25);
+            padding-top: 1.15rem;
+            border-top: 1px solid var(--linea);
             gap: 1rem;
         }
 
         .price-old {
-            font-size: 0.9rem;
-            color: var(--gris-perla);
+            font-size: 0.85rem;
+            color: var(--texto-tenue);
             text-decoration: line-through;
-            text-decoration-color: rgba(201,162,75,0.7);
             display: block;
         }
 
         .price-label {
-            font-size: 0.68rem;
-            color: var(--oro);
+            font-size: 0.62rem;
+            color: var(--oro-oscuro);
             display: block;
-            letter-spacing: 2px;
+            letter-spacing: 2.4px;
             text-transform: uppercase;
-            margin: 0.2rem 0 0.1rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
         }
 
         .product-price {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.9rem;
-            color: var(--marfil);
-            font-weight: 700;
+            font-size: 1.85rem;
+            color: var(--verde);
+            font-weight: 600;
             line-height: 1;
         }
 
         .btn-order {
-            padding: 0.8rem 1.5rem;
-            background: var(--wa);
-            color: #fff;
-            border: none;
+            padding: 0.78rem 1.35rem;
+            background: var(--verde);
+            color: var(--marfil);
+            border: 1px solid var(--verde);
             border-radius: 2px;
             font-family: 'Jost', sans-serif;
-            font-weight: 600;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 0.76rem;
+            letter-spacing: 1.8px;
             text-transform: uppercase;
             cursor: pointer;
             display: inline-flex; align-items: center; gap: 0.5rem;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: background .3s ease, transform .3s ease, box-shadow .3s ease;
             white-space: nowrap;
         }
 
         .btn-order:hover {
-            background: #1EBE5A;
+            background: var(--verde-medio);
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(37,211,102,0.35);
+            box-shadow: 0 10px 22px rgba(26,59,48,0.22);
         }
 
-        .btn-order svg { width: 18px; height: 18px; }
+        .btn-order svg { width: 16px; height: 16px; }
 
         /* ===================================
-           FEATURES
+           PROMESA / FEATURES
            =================================== */
         .features {
-            padding: 80px 20px;
-            background: var(--carbon);
-            border-top: 1px solid rgba(201,162,75,0.2);
-            border-bottom: 1px solid rgba(201,162,75,0.2);
+            background: var(--marmol);
+            border-top: 1px solid var(--linea);
+            border-bottom: 1px solid var(--linea);
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.5rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 1.4rem;
+            margin-top: clamp(2.4rem, 4vw, 3.2rem);
         }
 
         .feature-card {
             text-align: center;
-            padding: 2.5rem 1.75rem;
-            background: var(--carbon-claro);
-            border: 1px solid rgba(201,162,75,0.18);
-            border-radius: 4px;
-            transition: all 0.3s ease;
+            padding: 2.6rem 1.6rem;
+            background: var(--blanco);
+            border: 1px solid var(--linea);
+            border-radius: 3px;
+            transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
         }
 
         .feature-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(201,162,75,0.55);
+            border-color: var(--oro-claro);
+            box-shadow: var(--sombra-suave);
         }
 
-        .feature-icon { font-size: 2.2rem; margin-bottom: 1rem; color: var(--oro); }
-
-        .feature-card h3 {
+        .feature-icon {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 0.6rem;
+            font-size: 1.05rem;
+            letter-spacing: 1px;
+            color: var(--oro-oscuro);
+            width: 46px; height: 46px;
+            margin: 0 auto 1.15rem;
+            display: flex; align-items: center; justify-content: center;
+            border: 1px solid var(--oro-claro);
+            border-radius: 50%;
+            line-height: 1;
+            transition: background .35s ease, color .35s ease, border-color .35s ease;
+        }
+        .feature-card:hover .feature-icon {
+            background: var(--verde);
+            border-color: var(--verde);
             color: var(--oro-claro);
         }
 
-        .feature-card p { color: var(--gris-perla); font-weight: 300; font-size: 0.92rem; }
-
-        /* ===================================
-           CONTENIDO SEO (sección marfil)
-           =================================== */
-        .content-section {
-            padding: 80px 20px;
-            background: var(--marfil);
-            color: var(--texto-oscuro);
+        .feature-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.42rem;
+            font-weight: 600;
+            margin-bottom: 0.55rem;
+            color: var(--verde);
         }
 
-        .content-grid { max-width: 950px; margin: 0 auto; }
+        .feature-card p { color: var(--texto-suave); font-weight: 300; font-size: 0.9rem; }
+
+        /* ===================================
+           CONTENIDO SEO — página blanca editorial
+           =================================== */
+        .content-section {
+            background: var(--blanco);
+            color: var(--texto);
+        }
+
+        .content-grid { max-width: 780px; margin: 0 auto; }
 
         .content-block h2 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2.2rem;
+            font-size: clamp(1.6rem, 3vw, 2.15rem);
             font-weight: 600;
-            color: var(--texto-oscuro);
-            margin: 2.25rem 0 1rem;
-            line-height: 1.2;
+            color: var(--verde);
+            margin: 2.8rem 0 1rem;
+            line-height: 1.22;
         }
 
         .content-block h2:first-child { margin-top: 0; }
 
         .content-block h3 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
+            font-size: 1.42rem;
             font-weight: 600;
             color: var(--oro-oscuro);
-            margin: 1.75rem 0 0.6rem;
+            margin: 2rem 0 0.6rem;
         }
 
         .content-block p {
-            color: #4A4840;
-            line-height: 1.85;
-            margin-bottom: 1rem;
+            color: #4C5157;
+            line-height: 1.9;
+            margin-bottom: 1.05rem;
             font-weight: 300;
             font-size: 1.02rem;
         }
 
-        .content-block strong { color: var(--texto-oscuro); font-weight: 500; }
+        .content-block strong { color: var(--verde); font-weight: 500; }
 
         .content-block ul {
-            margin: 1rem 0 1.5rem 1.5rem;
-            color: #4A4840;
-            line-height: 1.85;
+            margin: 1rem 0 1.6rem 1.4rem;
+            color: #4C5157;
+            line-height: 1.9;
             font-weight: 300;
         }
 
-        .content-block ul li { margin-bottom: 0.5rem; }
+        .content-block ul li { margin-bottom: 0.45rem; }
+        .content-block ul li::marker { color: var(--oro); }
 
         .highlight-box {
-            background: #FBF8F1;
-            padding: 2rem 2.25rem;
-            border: 1px solid rgba(154,122,51,0.35);
-            border-left: 3px solid var(--oro);
+            background: var(--marfil);
+            padding: 2rem 2.2rem;
+            border: 1px solid var(--linea);
+            border-left: 2px solid var(--oro);
             border-radius: 2px;
-            margin: 2rem 0;
+            margin: 2.2rem 0;
         }
+        .highlight-box p:last-child { margin-bottom: 0; }
 
         /* ===================================
            FAQ
            =================================== */
-        .faq-section { padding: 80px 20px; background: var(--negro); }
+        .faq-section { background: var(--marfil); }
+
+        .faq-list { max-width: 840px; margin: clamp(2.2rem, 4vw, 3rem) auto 0; }
 
         .faq-item {
-            background: var(--carbon);
-            border: 1px solid rgba(201,162,75,0.2);
-            border-radius: 4px;
-            padding: 1.5rem 2rem;
-            max-width: 900px;
-            margin: 0 auto 1rem;
+            background: var(--blanco);
+            border: 1px solid var(--linea);
+            border-radius: 3px;
+            padding: 1.5rem 1.9rem;
+            margin: 0 auto 0.9rem;
+            transition: border-color .3s ease, box-shadow .3s ease;
         }
+
+        .faq-item:hover { border-color: var(--oro-claro); box-shadow: var(--sombra-suave); }
 
         .faq-question {
             font-family: 'Cormorant Garamond', serif;
             font-weight: 600;
-            color: var(--oro-claro);
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
+            color: var(--verde);
+            font-size: 1.28rem;
+            margin-bottom: 0.4rem;
+            line-height: 1.3;
         }
 
-        .faq-answer { color: var(--gris-perla); font-weight: 300; line-height: 1.7; font-size: 0.97rem; }
+        .faq-answer { color: var(--texto-suave); font-weight: 300; line-height: 1.75; font-size: 0.94rem; }
 
         /* ===================================
            CONFIANZA
            =================================== */
         .trust-section {
-            background: var(--carbon);
-            padding: 70px 20px;
+            background: var(--marmol);
             text-align: center;
-            border-top: 1px solid rgba(201,162,75,0.2);
+            border-top: 1px solid var(--linea);
         }
 
         .trust-badges {
-            display: flex; justify-content: center; align-items: center;
-            gap: 3.5rem; flex-wrap: wrap; margin-top: 2rem;
+            display: flex; justify-content: center; align-items: flex-start;
+            gap: clamp(2rem, 6vw, 4.5rem); flex-wrap: wrap;
+            margin-top: clamp(2.2rem, 4vw, 3rem);
         }
 
-        .trust-badge { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
-        .trust-badge-icon { font-size: 2.2rem; }
-        .trust-badge-text { font-weight: 400; letter-spacing: 1px; color: var(--marfil); font-size: 0.95rem; }
+        .trust-badge { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; max-width: 210px; }
+        .trust-badge-icon {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.75rem; color: var(--oro); line-height: 1;
+            font-variant-emoji: text;
+        }
+        .trust-badge-text {
+            font-weight: 400; letter-spacing: 2px; color: var(--verde);
+            font-size: 0.78rem; text-transform: uppercase;
+        }
 
         /* ===================================
-           CTA FINAL
+           CTA FINAL — bloque verde profundo
            =================================== */
         .final-cta {
             background:
-                radial-gradient(ellipse at 50% 120%, rgba(201,162,75,0.2) 0%, transparent 60%),
-                var(--negro);
-            padding: 90px 20px;
+                radial-gradient(ellipse at 50% 115%, rgba(169,138,74,0.22) 0%, transparent 62%),
+                var(--verde);
             text-align: center;
-            border-top: 1px solid rgba(201,162,75,0.25);
+            color: var(--marfil);
         }
 
         .final-cta h2 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2.6rem;
-            font-weight: 600;
+            font-size: clamp(1.9rem, 4vw, 2.75rem);
+            font-weight: 500;
             color: var(--marfil);
             margin-bottom: 1rem;
+            line-height: 1.2;
         }
 
         .final-cta p {
             font-weight: 300;
             color: var(--gris-perla);
-            font-size: 1.05rem;
-            max-width: 680px;
-            margin: 0 auto 2.25rem;
+            font-size: 1.02rem;
+            max-width: 660px;
+            margin: 0 auto 2.3rem;
+        }
+
+        /* botón invertido dentro del bloque verde */
+        .final-cta .cta-hero {
+            background: linear-gradient(135deg, var(--oro-claro) 0%, var(--oro) 55%, var(--oro-oscuro) 100%);
+            border-color: rgba(233,215,175,0.5);
+            color: #14261E;
+            font-weight: 600;
+            box-shadow: 0 12px 34px rgba(0,0,0,0.3);
+        }
+        .final-cta .cta-hero:hover {
+            background: linear-gradient(135deg, #E4CC98 0%, var(--oro-claro) 55%, var(--oro) 100%);
+            border-color: #E4CC98;
+            color: #14261E;
+            box-shadow: 0 18px 44px rgba(0,0,0,0.36);
         }
 
         /* ===================================
@@ -578,34 +683,43 @@
            =================================== */
         .whatsapp-float {
             position: fixed;
-            width: 64px; height: 64px;
-            bottom: 28px; right: 28px;
+            width: 58px; height: 58px;
+            bottom: 26px; right: 26px;
             background-color: var(--wa);
             border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            box-shadow: 0 6px 20px rgba(37,211,102,0.45);
+            box-shadow: 0 8px 26px rgba(37,211,102,0.4);
             z-index: 1000;
-            transition: all 0.3s ease;
+            transition: transform .3s ease, box-shadow .3s ease;
             text-decoration: none;
         }
 
-        .whatsapp-float:hover { transform: scale(1.1); }
-        .whatsapp-float svg { width: 36px; height: 36px; fill: white; }
+        .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 12px 32px rgba(37,211,102,0.5); }
+        .whatsapp-float svg { width: 32px; height: 32px; fill: white; }
 
         /* ===================================
            RESPONSIVE
            =================================== */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
-            .hero .subtitle { font-size: 1.2rem; }
-            .keyword-badge { padding: 0.45rem 1rem; font-size: 0.75rem; }
-            .section-title { font-size: 2rem; }
-            .products-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-            .product-footer { flex-direction: column; align-items: stretch; }
-            .btn-order { justify-content: center; }
-            .whatsapp-float { width: 58px; height: 58px; bottom: 20px; right: 20px; }
-            .content-block h2 { font-size: 1.7rem; }
-            .final-cta h2 { font-size: 1.9rem; }
+            .container { padding: 0 18px; }
+            .hero-keywords { gap: 0.45rem; }
+            .keyword-badge { padding: 0.36rem 0.85rem; font-size: 0.68rem; letter-spacing: 1px; }
+            .cta-hero { padding: 0.95rem 2rem; font-size: 0.84rem; letter-spacing: 1.6px; }
+            .filter-tabs { gap: 0.3rem 1.1rem; }
+            .filter-tab { font-size: 0.72rem; letter-spacing: 1.6px; }
+            .products-grid { grid-template-columns: 1fr; gap: 1.4rem; }
+            .product-info { padding: 1.4rem 1.3rem 1.4rem; }
+            .product-footer { flex-direction: column; align-items: stretch; gap: 1rem; }
+            .btn-order { justify-content: center; padding: 0.85rem 1.2rem; }
+            .whatsapp-float { width: 54px; height: 54px; bottom: 18px; right: 18px; }
+            .whatsapp-float svg { width: 28px; height: 28px; }
+            .faq-item { padding: 1.25rem 1.4rem; }
+            .content-block p, .content-block ul { font-size: 0.97rem; line-height: 1.8; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { transition: none !important; animation: none !important; }
+            html { scroll-behavior: auto; }
         }
     </style>
 
@@ -618,7 +732,7 @@
       "description": "Coronas fúnebres, corazones, cruces y arreglos florales de lujo para velaciones y funerales en Cartagena. Entrega prioritaria a salas de velación, iglesias y cementerios. Cinta de condolencias personalizada.",
       "provider": {
         "@type": "Florist",
-        "name": "TR Florería Cartagena",
+        "name": "Floristería Floripondio Cartagena",
         "telephone": "+573043846071",
         "address": {
           "@type": "PostalAddress",
@@ -634,9 +748,9 @@
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "COP",
-        "lowPrice": "100000",
-        "highPrice": "437500",
-        "offerCount": "24"
+        "lowPrice": "225000",
+        "highPrice": "375000",
+        "offerCount": "8"
       }
     }
     </script>
@@ -657,6 +771,7 @@
     <!-- Hero -->
     <section class="hero">
         <div class="container">
+            <img src="/assets/logo.webp" alt="Floristería Floripondio Cartagena" class="hero-logo" width="130" height="130">
             <p class="hero-eyebrow">Floristería Floripondio · Cartagena de Indias</p>
             <h1>Coronas y Ramos Fúnebres <em>de Lujo</em> para Despedir con Honor</h1>
             <p class="subtitle">Una despedida con la dignidad que merece quien tanto quisiste</p>
@@ -681,7 +796,7 @@
 
     <!-- Cinta de descuento -->
     <div class="promo-ribbon">
-        ✦ Entrega el mismo día en Cartagena · Salas de velación, iglesias y cementerios ✦
+        <span>✦</span>&nbsp; Entrega el mismo día en Cartagena · Salas de velación, iglesias y cementerios &nbsp;<span>✦</span>
     </div>
 
     <!-- Catálogo -->
@@ -690,15 +805,13 @@
             <p class="section-eyebrow">Colección Fúnebre</p>
             <h2 class="section-title">Catálogo de Homenajes Florales</h2>
             <div class="gold-divider"></div>
-            <p class="section-subtitle">Piezas hechas a mano —coronas, cruces, corazones y arreglos de gran formato— con flor fresca premium. Junto a cada una verás su código y su valor; sepárala de una vez por WhatsApp.</p>
+            <p class="section-subtitle">Piezas hechas a mano —coronas, pedestales de gran formato y arreglos de base— con flor fresca premium. Junto a cada una verás su código y su valor; sepárala de una vez por WhatsApp.</p>
 
             <div class="filter-tabs">
                 <button class="filter-tab active" data-filter="todos">Todos</button>
                 <button class="filter-tab" data-filter="coronas">Coronas</button>
-                <button class="filter-tab" data-filter="corazones">Corazones</button>
-                <button class="filter-tab" data-filter="cruces">Cruces</button>
                 <button class="filter-tab" data-filter="pedestales">Gran Formato</button>
-                <button class="filter-tab" data-filter="mesa">Mesa y Urna</button>
+                <button class="filter-tab" data-filter="mesa">Mesa y Base</button>
                 <button class="filter-tab" data-filter="personalizado">Con Banda</button>
                 <button class="filter-tab" data-filter="premium">Premium</button>
             </div>
@@ -719,22 +832,22 @@
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">⏱</div>
+                    <div class="feature-icon">I</div>
                     <h3>Entrega en Horas</h3>
                     <p>Armamos el arreglo y lo despachamos derecho hasta la iglesia, el cementerio o la sala de velación, dentro del plazo que la familia nos indique</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🕊</div>
+                    <div class="feature-icon">II</div>
                     <h3>Discreción Absoluta</h3>
                     <p>Atendemos cada encargo con la delicadeza, la discreción y el respeto que exige el dolor de una familia</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">❁</div>
+                    <div class="feature-icon">III</div>
                     <h3>Flores Premium del Día</h3>
                     <p>Rosas, claveles, crisantemos, orquídeas y follaje fino, escogidos ese mismo día para asegurar una frescura impecable</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">✒</div>
+                    <div class="feature-icon">IV</div>
                     <h3>Banda Personalizada</h3>
                     <p>Cinta de seda en letras plateadas o doradas, con el apellido de la familia, el nombre de la empresa o una frase de despedida</p>
                 </div>
@@ -829,8 +942,8 @@
             <h2 class="section-title">Preguntas Frecuentes</h2>
             <div class="gold-divider"></div>
             <p class="section-subtitle">Estas son las inquietudes más frecuentes de las familias antes de encargar su ramo o corona fúnebre en Cartagena.</p>
-            <br>
 
+            <div class="faq-list">
             <div class="faq-item">
                 <div class="faq-question">¿Qué tan rápido entregan una corona fúnebre en Cartagena?</div>
                 <div class="faq-answer">
@@ -872,6 +985,7 @@
                     Recibimos transferencia, Nequi, Daviplata y efectivo. Coordinamos el método más cómodo para ti por WhatsApp al 304 384 6071.
                 </div>
             </div>
+            </div>
         </div>
     </section>
 
@@ -879,21 +993,21 @@
     <section class="trust-section">
         <div class="container">
             <p class="section-eyebrow">Nuestra Trayectoria</p>
-            <h2 class="section-title">Familias que Confiaron su Último Adiós a TR Florería</h2>
+            <h2 class="section-title">Familias que Confiaron su Último Adiós a Floristería Floripondio</h2>
             <div class="gold-divider"></div>
             <p class="section-subtitle">Somos la floristería que cientos de familias en Cartagena han elegido para el homenaje floral de un ser querido.</p>
 
             <div class="trust-badges">
                 <div class="trust-badge">
-                    <div class="trust-badge-icon">⭐⭐⭐⭐⭐</div>
+                    <div class="trust-badge-icon">★★★★★</div>
                     <div class="trust-badge-text">5 Estrellas en Google</div>
                 </div>
                 <div class="trust-badge">
-                    <div class="trust-badge-icon">🕊</div>
+                    <div class="trust-badge-icon">❦</div>
                     <div class="trust-badge-text">Entrega Garantizada</div>
                 </div>
                 <div class="trust-badge">
-                    <div class="trust-badge-icon">🤝</div>
+                    <div class="trust-badge-icon">✦</div>
                     <div class="trust-badge-text">Trato Respetuoso</div>
                 </div>
             </div>
@@ -939,407 +1053,107 @@
             } catch(e) { console.error('Error en tracking:', e); }
         }
 
-        // Catálogo fúnebre — TR Florería Cartagena (códigos #032 a #068)
+        // Catálogo fúnebre — Floristería Floripondio Cartagena (códigos #033 a #040), ordenado de menor a mayor precio
         const products = [
-            {
-                        "id": 32,
-                        "code": "032",
-                        "name": "Ascenso de Paz",
-                        "price": 125000,
-                        "image": "/assets/foto32.webp",
-                        "description": "Arreglo vertical en forma de pirámide con rosas blancas, un lirio abierto y gladiolo rosado, realzado por asters blancos, nube y un abanico de palma verde. Verticalidad serena para una despedida luminosa.",
-                        "categories": [
-                                    "pedestales"
-                        ]
-            },
-            {
-                        "id": 33,
-                        "code": "033",
-                        "name": "Corona Silencio Blanco",
-                        "price": 125000,
-                        "image": "/assets/foto33.webp",
-                        "description": "Corona circular de crisantemos blancos pompón enmarcada en follaje verde brillante y atravesada por una banda de seda blanca, lista para llevar el apellido de la familia o el mensaje de despedida.",
-                        "categories": [
-                                    "coronas",
-                                    "personalizado"
-                        ]
-            },
-            {
-                        "id": 34,
-                        "code": "034",
-                        "name": "Corona Sendero de Luz",
-                        "price": 100000,
-                        "image": "/assets/foto34.webp",
-                        "description": "Corona de margaritas y crisantemos blancos dispuesta sobre un abanico de palma verde en punta. Una pieza sobria y luminosa que acompaña la velación con sencillez y respeto.",
-                        "categories": [
-                                    "coronas"
-                        ]
-            },
-            {
-                        "id": 35,
-                        "code": "035",
-                        "name": "Corona Honor Escarlata",
-                        "price": 350000,
-                        "image": "/assets/foto35.webp",
-                        "description": "Gran corona de rosas rojas sobre follaje verde denso, con hojas variegadas enrolladas, tarjeta de condolencias y banda de seda blanca en letras doradas para el nombre de la familia o la institución.",
-                        "categories": [
-                                    "coronas",
-                                    "personalizado",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 36,
-                        "code": "036",
-                        "name": "Corona Jardín Sereno",
-                        "price": 200000,
-                        "image": "/assets/foto36.webp",
-                        "description": "Corona de rosas blancas y marfil con margaritas de centro verde, lirio abierto, eucalipto y follaje fresco. Un homenaje natural, delicado y lleno de luz.",
-                        "categories": [
-                                    "coronas"
-                        ]
-            },
-            {
-                        "id": 37,
-                        "code": "037",
-                        "name": "Corona Ternura Rosada",
-                        "price": 225000,
-                        "image": "/assets/foto37.webp",
-                        "description": "Corona de rosas rosadas y crema con crisantemos blancos y margaritas fucsia sobre un marco de follaje verde compacto. Un adiós cálido para despedir con dulzura.",
-                        "categories": [
-                                    "coronas"
-                        ]
-            },
-            {
-                        "id": 38,
-                        "code": "038",
-                        "name": "Homenaje Manto Blanco",
-                        "price": 437500,
-                        "image": "/assets/foto38.webp",
-                        "description": "Imponente arreglo esférico de rosas y claveles blancos con lirios abiertos, margaritas y abundante nube, enmarcado en helechos y follaje fino. La pieza de mayor presencia del catálogo.",
-                        "categories": [
-                                    "pedestales",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 39,
-                        "code": "039",
-                        "name": "Descanso Dorado",
-                        "price": 162500,
-                        "image": "/assets/foto39.webp",
-                        "description": "Arreglo ovalado bajo con rosas amarillas y blancas, lirio abierto, nube y helechos frescos. Diseñado para acompañar la urna o presidir la mesa de homenaje.",
-                        "categories": [
-                                    "mesa"
-                        ]
-            },
-            {
-                        "id": 40,
-                        "code": "040",
-                        "name": "Corona Manto de Claveles",
-                        "price": 312500,
-                        "image": "/assets/foto40.webp",
-                        "description": "Gran corona de claveles blancos con lirios abiertos y abundante nube, enmarcada en palma verde y con banda de seda personalizable en letras doradas.",
-                        "categories": [
-                                    "coronas",
-                                    "personalizado",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 41,
-                        "code": "041",
-                        "name": "Corona Amanecer Violeta",
-                        "price": 250000,
-                        "image": "/assets/foto41.webp",
-                        "description": "Corona de crisantemos blancos coronada por un ramillete de lirios abiertos, rosas marfil y statice morado, sobre un marco redondo de follaje verde fresco.",
-                        "categories": [
-                                    "coronas"
-                        ]
-            },
-            {
-                        "id": 42,
-                        "code": "042",
-                        "name": "Corona Pureza Absoluta",
-                        "price": 350000,
-                        "image": "/assets/foto42.webp",
-                        "description": "Corona de rosas blancas con nube, enmarcada en un amplio abanico de palma verde y rematada con un gran moño de seda blanca de cintas largas. Blanco absoluto, paz absoluta.",
-                        "categories": [
-                                    "coronas",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 43,
-                        "code": "043",
-                        "name": "Corona Pasión Serena",
-                        "price": 312500,
-                        "image": "/assets/foto43.webp",
-                        "description": "Corona de rosas rojas con nube y follaje de palma verde, rematada con un moño de seda blanca. El contraste entre el amor profundo y la serenidad del último adiós.",
-                        "categories": [
-                                    "coronas",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 44,
-                        "code": "044",
-                        "name": "Corona Cielo y Fuego",
-                        "price": 300000,
-                        "image": "/assets/foto44.webp",
-                        "description": "Cojín de crisantemos blancos coronado por un manto de rosas rojas con solidago dorado, enmarcado en hojas variegadas dispuestas en abanico. Fuerza y solemnidad en una sola pieza.",
-                        "categories": [
-                                    "coronas",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 45,
-                        "code": "045",
-                        "name": "Corona Blanca Institucional",
-                        "price": 250000,
-                        "image": "/assets/foto45.webp",
-                        "description": "Arreglo de rosas blancas con solidago amarillo y follaje verde en abanico, atravesado por una banda de seda con letras doradas para el homenaje familiar, corporativo o institucional.",
-                        "categories": [
-                                    "coronas",
-                                    "personalizado"
-                        ]
-            },
-            {
-                        "id": 46,
-                        "code": "046",
-                        "name": "Homenaje Nube Blanca",
-                        "price": 175000,
-                        "image": "/assets/foto46.webp",
-                        "description": "Arreglo piramidal de crisantemos y rosas blancas con abundante nube, enmarcado en palma verde en punta y acompañado de tarjeta de condolencias.",
-                        "categories": [
-                                    "pedestales"
-                        ]
-            },
-            {
-                        "id": 47,
-                        "code": "047",
-                        "name": "Cascada Eterna",
-                        "price": 400000,
-                        "image": "/assets/foto47.webp",
-                        "description": "Gran arreglo en cascada de claveles y crisantemos blancos con lirios, nube y palma verde, coronado por un amplio moño de seda blanca. Majestuoso, vertical y profundamente solemne.",
-                        "categories": [
-                                    "pedestales",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 48,
-                        "code": "048",
-                        "name": "Cojín Serenidad",
-                        "price": 212500,
-                        "image": "/assets/foto48.webp",
-                        "description": "Cojín ovalado de crisantemos blancos coronado por un ramillete de rosas blancas con limonium y helechos frescos. Sobriedad clásica para la sala de velación.",
-                        "categories": [
-                                    "mesa"
-                        ]
-            },
-            {
-                        "id": 49,
-                        "code": "049",
-                        "name": "Manto de Rosas Rojas",
-                        "price": 250000,
-                        "image": "/assets/foto49.webp",
-                        "description": "Arreglo bajo en abanico con rosas rojas, solidago dorado y palma verde, rematado por un gran moño marfil y una cinta de seda en diagonal.",
-                        "categories": [
-                                    "mesa"
-                        ]
-            },
-            {
-                        "id": 50,
-                        "code": "050",
-                        "name": "Bouquet Paz Blanca",
-                        "price": 312500,
-                        "image": "/assets/foto50.webp",
-                        "description": "Bouquet compacto en base de madera con rosas blancas, claveles verdes y abundante nube, rematado con un moño de seda blanca. Ideal para acompañar la urna o el altar.",
-                        "categories": [
-                                    "mesa",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 51,
-                        "code": "051",
-                        "name": "Cruz Fe Eterna",
-                        "price": 250000,
-                        "image": "/assets/foto51.webp",
-                        "description": "Cruz de crisantemos blancos con un ramillete central de rosas blancas, solidago dorado y follaje fresco. El símbolo de fe por excelencia para la misa de cuerpo presente.",
-                        "categories": [
-                                    "cruces"
-                        ]
-            },
-            {
-                        "id": 52,
-                        "code": "052",
-                        "name": "Corazón Amor y Adiós",
-                        "price": 225000,
-                        "image": "/assets/foto52.webp",
-                        "description": "Corazón de crisantemos blancos con una mitad de rosas rojas y nube, atravesado por un gran moño de organza blanca con cintas al viento. El homenaje más íntimo de la familia.",
-                        "categories": [
-                                    "corazones"
-                        ]
-            },
-            {
-                        "id": 53,
-                        "code": "053",
-                        "name": "Homenaje Rojo y Blanco",
-                        "price": 300000,
-                        "image": "/assets/foto53.webp",
-                        "description": "Arreglo redondo de rosas rojas y blancas con abundante nube y follaje fresco, rematado por un moño de seda marfil con fucsia. Presencia y color para celebrar una vida.",
-                        "categories": [
-                                    "mesa",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 54,
-                        "code": "054",
-                        "name": "Manto de Paz",
-                        "price": 350000,
-                        "image": "/assets/foto54.webp",
-                        "description": "Arreglo ovalado bajo de rosas y claveles blancos con lirios abiertos, nube y helechos frescos. Diseñado para cubrir con serenidad la mesa de homenaje o el féretro.",
-                        "categories": [
-                                    "mesa",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 55,
-                        "code": "055",
-                        "name": "Corazón Rojo Eterno",
-                        "price": 375000,
-                        "image": "/assets/foto55.webp",
-                        "description": "Corazón macizo elaborado con decenas de rosas rojas sobre base oscura y borde de follaje verde brillante. Un adiós rotundo, para el amor más grande.",
-                        "categories": [
-                                    "corazones",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 59,
-                        "code": "059",
-                        "name": "Corona Sol y Nube",
-                        "price": 175000,
-                        "image": "/assets/foto56_1.webp",
-                        "description": "Corona circular que alterna girasoles frescos con crisantemos pompón, rosas blancas y lisianthus sobre eucalipto y follaje verde. Un homenaje luminoso para despedir a quien vivió con alegría.",
-                        "categories": [
-                                    "coronas"
-                        ]
-            },
-            {
-                        "id": 60,
-                        "code": "060",
-                        "name": "Corazón Dulce Recuerdo",
-                        "price": 225000,
-                        "image": "/assets/foto57_2.webp",
-                        "description": "Corazón abierto sobre trípode de madera, tejido con rosas rosadas, crisantemos blancos, astromelias y nube, enmarcado en helecho y follaje fresco. Ternura serena para una despedida delicada.",
-                        "categories": [
-                                    "corazones"
-                        ]
-            },
-            {
-                        "id": 61,
-                        "code": "061",
-                        "name": "Corona Sol Eterno",
-                        "price": 350000,
-                        "image": "/assets/foto58_3.webp",
-                        "description": "Corona cubierta por completo de girasoles frescos, con detalles de solidago y helecho verde, rematada con banda de seda. Un adiós cálido y radiante, imposible de olvidar.",
-                        "categories": [
-                                    "coronas",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 62,
-                        "code": "062",
-                        "name": "Corona Campo de Luz",
-                        "price": 181250,
-                        "image": "/assets/foto59.webp",
-                        "description": "Corona de girasoles, rosas blancas, margaritas y pompones amarillos sobre follaje variado. Evoca un campo abierto al amanecer: un homenaje fresco, natural y lleno de esperanza.",
-                        "categories": [
-                                    "coronas"
-                        ]
-            },
-            {
-                        "id": 63,
-                        "code": "063",
-                        "name": "Corona Amanecer Sereno",
-                        "price": 325000,
-                        "image": "/assets/foto60.webp",
-                        "description": "Gran corona sobre trípode con crisantemos blancos, gerberas y rosas naranjas, lirios abiertos, eucalipto y abanico de palma verde. Presencia imponente para salas de velación e iglesias.",
-                        "categories": [
-                                    "coronas",
-                                    "pedestales",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 64,
-                        "code": "064",
-                        "name": "Corazón Girasoles de Vida",
-                        "price": 300000,
-                        "image": "/assets/foto61.webp",
-                        "description": "Corazón abierto sobre atril con girasoles grandes y pequeños, rosas champagne y solidago amarillo sobre follaje verde intenso. Un tributo alegre para celebrar una vida luminosa.",
-                        "categories": [
-                                    "corazones",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 65,
-                        "code": "065",
-                        "name": "Cruz Amor y Fe",
-                        "price": 287500,
-                        "image": "/assets/foto62.webp",
-                        "description": "Cruz de crisantemos blancos con un ramo central de rosas rojas y nube, enmarcada en hojas de anturio y follaje brillante. Fe y amor unidos en un mismo homenaje.",
-                        "categories": [
-                                    "cruces",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 66,
-                        "code": "066",
-                        "name": "Corona Tributo con Banda",
-                        "price": 237500,
-                        "image": "/assets/foto63.webp",
-                        "description": "Corona de crisantemos y margaritas blancas con rosas blancas sobre abanico de hojas variegadas, con banda de seda en letras doradas para el nombre de la familia o la institución.",
-                        "categories": [
-                                    "coronas",
-                                    "personalizado"
-                        ]
-            },
-            {
-                        "id": 67,
-                        "code": "067",
-                        "name": "Corazón Jardín de Colores",
-                        "price": 350000,
-                        "image": "/assets/foto64.webp",
-                        "description": "Corazón abierto sobre trípode con rosas, claveles, margaritas y gerberas en rojo, rosado, amarillo y lila sobre helecho verde. Para despedir con color a quien llenó de vida cada día.",
-                        "categories": [
-                                    "corazones",
-                                    "premium"
-                        ]
-            },
-            {
-                        "id": 68,
-                        "code": "068",
-                        "name": "Corona Sencillez Blanca",
-                        "price": 118750,
-                        "image": "/assets/foto65.webp",
-                        "description": "Corona ovalada de crisantemos blancos sobre follaje verde compacto, con un ramillete de palma, nube y flores claras en la base. Sobriedad y pureza para un adiós sencillo y digno.",
-                        "categories": [
-                                    "coronas"
-                        ]
-            }
-];
+                {
+                    "id": 35,
+                    "code": "035",
+                    "name": "Cesta Amanecer Dorado",
+                    "price": 225000,
+                    "image": "/assets/foto35.webp",
+                    "description": "Arreglo fúnebre de base en rosas amarillas frescas, realzado con solidago dorado, nube blanca y un amplio abanico de palmas y hojas verdes. Lleva moña de seda blanca y tarjeta de condolencias para el mensaje de la familia. Un homenaje cálido y luminoso, ideal para celebrar una vida alegre y bien vivida.",
+                    "categories": [
+                        "mesa"
+                    ]
+                },
+                {
+                    "id": 33,
+                    "code": "033",
+                    "name": "Pedestal Rosas de Paz",
+                    "price": 312500,
+                    "image": "/assets/foto33.webp",
+                    "description": "Gran pieza circular montada en trípode de madera, elaborada con más de cincuenta rosas blancas premium, nube y follaje fino, enmarcada por un abanico completo de palmas verdes. Su moña de seda blanca con caídas largas le da la solemnidad clásica de las salas de velación. Presencia imponente y absolutamente serena.",
+                    "categories": [
+                        "pedestales",
+                        "premium"
+                    ]
+                },
+                {
+                    "id": 34,
+                    "code": "034",
+                    "name": "Tributo Rojo y Marfil",
+                    "price": 312500,
+                    "image": "/assets/foto34.webp",
+                    "description": "Arreglo fúnebre de base en media luna con rosas rojas y rosas blancas entrelazadas con aster blanco y follaje verde brillante. Su doble moña en seda marfil y roja aporta un contraste elegante y lleno de sentimiento. Perfecto para expresar amor y gratitud en la despedida de un ser querido.",
+                    "categories": [
+                        "mesa"
+                    ]
+                },
+                {
+                    "id": 39,
+                    "code": "039",
+                    "name": "Corona Círculo Eterno",
+                    "price": 312500,
+                    "image": "/assets/foto39.webp",
+                    "description": "Corona circular tradicional tejida con rosas blancas, margaritas de centro verde, nube y follaje fresco sobre una base redonda de gran diámetro. Incluye tarjeta para el nombre de la familia o la empresa. El símbolo más reconocido del duelo y el respeto, hecho a mano con flor de primera calidad.",
+                    "categories": [
+                        "coronas",
+                        "personalizado"
+                    ]
+                },
+                {
+                    "id": 36,
+                    "code": "036",
+                    "name": "Pedestal Gloria Blanca",
+                    "price": 375000,
+                    "image": "/assets/foto36.webp",
+                    "description": "Homenaje de gran formato sobre caballete de madera, compuesto por lirios blancos abiertos, rosas, claveles, crisantemos pompón y nube, sobre un lecho de eucalipto y helecho verde. La mezcla de texturas y el perfume del lirio crean una atmósfera de paz absoluta. Nuestra pieza más solicitada para exequias e iglesias.",
+                    "categories": [
+                        "pedestales",
+                        "premium"
+                    ]
+                },
+                {
+                    "id": 37,
+                    "code": "037",
+                    "name": "Pedestal Nube de Hortensias",
+                    "price": 375000,
+                    "image": "/assets/foto37.webp",
+                    "description": "Arreglo vertical de lujo en trípode con hortensias blancas, rosas premium y abundante nube, acompañado de hojas de dracena variegada y follaje en cascada. Su terminación descendente y su tarjeta de condolencias le dan un aire de jardín suspendido. Delicadeza y distinción para una despedida memorable.",
+                    "categories": [
+                        "pedestales",
+                        "premium"
+                    ]
+                },
+                {
+                    "id": 38,
+                    "code": "038",
+                    "name": "Pedestal Manto de Honor",
+                    "price": 375000,
+                    "image": "/assets/foto38.webp",
+                    "description": "Pieza clásica de velación en trípode, elaborada con crisantemos, rosas y claveles blancos sobre un abanico de palmas verdes en punta. Su gran moña de seda blanca con cintas caídas puede personalizarse con el apellido de la familia o el mensaje de la institución. Sobriedad, respeto y presencia.",
+                    "categories": [
+                        "pedestales",
+                        "personalizado",
+                        "premium"
+                    ]
+                },
+                {
+                    "id": 40,
+                    "code": "040",
+                    "name": "Orquídeas de Consuelo",
+                    "price": null,
+                    "image": "/assets/foto40.webp",
+                    "description": "Orquídeas phalaenopsis vivas en matera, envueltas en papel blanco y lazo de seda marfil, disponibles en tonos fucsia, rosado y durazno. Un detalle de acompañamiento que permanece con la familia mucho después del funeral y se sigue cuidando en casa. Disponibilidad y valor según la variedad del día: consúltanos por WhatsApp.",
+                    "categories": [
+                        "mesa",
+                        "premium"
+                    ]
+                }
+            ];
 
         function formatPrice(price) {
+            if (price === null || price === undefined || isNaN(price)) return 'Consultar';
             return '$' + price.toLocaleString('en-US');
         }
 
@@ -1350,8 +1164,10 @@
                 filtered = products.filter(p => p.categories.includes(filter));
             }
             grid.innerHTML = filtered.map(product => {
+                const precioTxt = (product.price === null || product.price === undefined)
+                          ? '' : ' por ' + formatPrice(product.price);
                 const msg = 'Código ' + product.code + ' — Hola, me interesa el arreglo fúnebre ' + product.name
-                          + ' por ' + formatPrice(product.price) + '. ¿Podrían darme más información?'
+                          + precioTxt + '. ¿Podrían darme más información?'
                           + '\n\nFoto: https://cartagenafloristeria.dondeseria.com' + product.image;
                 const wa = 'https://wa.me/573043846071?text=' + encodeURIComponent(msg);
                 return `
@@ -1365,7 +1181,7 @@
                         <div class="product-description">${product.description}</div>
                         <div class="product-footer">
                             <div>
-                                <span class="price-label">Precio</span>
+                                <span class="price-label">${(product.price === null || product.price === undefined) ? 'Valor' : 'Precio'}</span>
                                 <div class="product-price">${formatPrice(product.price)}</div>
                             </div>
                             <a href="${wa}"
@@ -1403,15 +1219,15 @@
             <button class="promo-flyer-close" type="button" onclick="closePromoFlyer()" aria-label="Cerrar aviso">&times;</button>
             <div class="promo-flyer-badge">ENTREGA HOY</div>
             <div class="promo-flyer-image-wrap">
-                <img src="/assets/foto38.webp" alt="Arreglo fúnebre de lujo en rosas y claveles blancos - TR Florería Cartagena" class="promo-flyer-image" loading="eager">
+                <img src="/assets/foto38.webp" alt="Arreglo fúnebre de lujo en rosas y claveles blancos - Floristería Floripondio Cartagena" class="promo-flyer-image" loading="eager">
             </div>
             <div class="promo-flyer-content">
                 <h2 id="promo-flyer-title">Homenajes Fúnebres con Entrega el Mismo Día</h2>
-                <p class="promo-flyer-tagline">34 piezas entre coronas, cruces, corazones y arreglos de gran formato, disponibles para llevar hoy mismo a iglesias, cementerios y salas de velación de Cartagena.</p>
+                <p class="promo-flyer-tagline">Coronas, pedestales de gran formato y arreglos de base, disponibles para llevar hoy mismo a iglesias, cementerios y salas de velación de Cartagena.</p>
                 <div class="promo-flyer-prices">
-                    <span class="promo-new-price">Desde $100,000</span>
+                    <span class="promo-new-price">Desde $225,000</span>
                 </div>
-                <p class="promo-savings">Coronas · Cruces · Corazones · Gran Formato</p>
+                <p class="promo-savings">Coronas · Gran Formato · Mesa y Base · Orquídeas</p>
                 <a href="https://wa.me/573043846071?text=Hola,%20necesito%20un%20arreglo%20f%C3%BAnebre%20en%20Cartagena.%20%C2%BFMe%20pueden%20asesorar%3F"
                    class="promo-flyer-btn"
                    target="_blank"
@@ -1427,35 +1243,35 @@
         </div>
     </div>
     <style>
-    .promo-flyer-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(6,6,10,.82);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;z-index:100000;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s ease;padding:16px;box-sizing:border-box}
+    .promo-flyer-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(26,59,48,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;z-index:100000;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s ease;padding:16px;box-sizing:border-box}
     .promo-flyer-overlay.active{opacity:1;visibility:visible}
-    .promo-flyer{position:relative;width:100%;max-width:420px;background:linear-gradient(180deg,#16161D 0%,#0C0C10 100%);border:1px solid rgba(201,162,75,.5);border-radius:6px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.7),0 0 60px rgba(201,162,75,.12);transform:scale(.75) translateY(30px);opacity:0;transition:transform .5s cubic-bezier(.22,1,.36,1),opacity .4s ease;font-family:'Jost',system-ui,sans-serif}
+    .promo-flyer{position:relative;width:100%;max-width:420px;background:linear-gradient(180deg,#FFFFFF 0%,#F7F4EF 100%);border:1px solid #E4DED2;border-radius:4px;overflow:hidden;box-shadow:0 40px 90px rgba(26,59,48,.32);transform:scale(.75) translateY(30px);opacity:0;transition:transform .5s cubic-bezier(.22,1,.36,1),opacity .4s ease;font-family:'Jost',system-ui,sans-serif}
     .promo-flyer-overlay.active .promo-flyer{transform:scale(1) translateY(0);opacity:1}
-    .promo-flyer-close{position:absolute;top:12px;right:12px;z-index:5;width:36px;height:36px;border-radius:50%;background:rgba(12,12,16,.7);color:#E8CE93;border:1px solid rgba(201,162,75,.5);font-size:22px;line-height:1;font-weight:300;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s ease;padding:0}
-    .promo-flyer-close:hover{background:#C9A24B;color:#0C0C10}
-    .promo-flyer-badge{position:absolute;top:16px;left:16px;z-index:4;background:linear-gradient(135deg,#C9A24B 0%,#9A7A33 100%);color:#0C0C10;padding:7px 16px;font-size:.72rem;font-weight:600;letter-spacing:2.5px;border-radius:2px}
-    .promo-flyer-image-wrap{position:relative;width:100%;height:250px;overflow:hidden;background:#E9EEF4}
+    .promo-flyer-close{position:absolute;top:12px;right:12px;z-index:5;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.9);color:#1A3B30;border:1px solid #D6CDBC;font-size:21px;line-height:1;font-weight:300;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s ease,color .2s ease;padding:0}
+    .promo-flyer-close:hover{background:#1A3B30;color:#F7F4EF;border-color:#1A3B30}
+    .promo-flyer-badge{position:absolute;top:16px;left:16px;z-index:4;background:#1A3B30;color:#F7F4EF;padding:6px 15px;font-size:.66rem;font-weight:500;letter-spacing:2.5px;border-radius:2px}
+    .promo-flyer-image-wrap{position:relative;width:100%;height:250px;overflow:hidden;background:#EFEAE1}
     .promo-flyer-image{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
-    .promo-flyer-image-wrap::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(180deg,transparent,#16161D)}
-    .promo-flyer-content{padding:20px 26px 24px;text-align:center}
-    .promo-flyer-content h2{font-family:'Cormorant Garamond','Jost',serif;font-size:1.6rem;color:#F4EFE6;margin:0 0 8px;font-weight:600;line-height:1.2}
-    .promo-flyer-tagline{font-size:.85rem;color:#B9B4A8;font-weight:300;margin:0 0 16px;line-height:1.5}
-    .promo-flyer-prices{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 8px;flex-wrap:wrap}
-    .promo-old-price{font-size:.95rem;color:#8B867A;text-decoration:line-through;text-decoration-color:rgba(201,162,75,.8);font-weight:400}
-    .promo-arrow{color:#C9A24B;font-weight:700;font-size:1.1rem}
-    .promo-new-price{font-family:'Cormorant Garamond','Jost',serif;font-size:1.5rem;font-weight:700;color:#E8CE93}
-    .promo-savings{font-size:.8rem;color:#C9A24B;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;margin:0 0 18px}
-    .promo-flyer-btn{display:flex;align-items:center;justify-content:center;width:100%;padding:14px 20px;background:#25D366;color:#fff;text-decoration:none;border-radius:2px;font-weight:600;font-size:.95rem;letter-spacing:1px;text-transform:uppercase;box-shadow:0 8px 22px rgba(37,211,102,.35);transition:all .25s ease;box-sizing:border-box}
-    .promo-flyer-btn:hover{transform:translateY(-2px);background:#1EBE5A}
-    .promo-flyer-secondary{margin-top:12px;background:none;border:none;color:#B9B4A8;font-family:'Jost',sans-serif;font-size:.82rem;letter-spacing:1px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
-    .promo-flyer-secondary:hover{color:#E8CE93}
+    .promo-flyer-image-wrap::after{content:'';position:absolute;left:0;right:0;bottom:0;height:60px;background:linear-gradient(180deg,transparent,#FFFFFF)}
+    .promo-flyer-content{padding:18px 26px 24px;text-align:center}
+    .promo-flyer-content h2{font-family:'Cormorant Garamond','Jost',serif;font-size:1.6rem;color:#1A3B30;margin:0 0 8px;font-weight:600;line-height:1.2}
+    .promo-flyer-tagline{font-size:.84rem;color:#5C6167;font-weight:300;margin:0 0 16px;line-height:1.55}
+    .promo-flyer-prices{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 6px;flex-wrap:wrap}
+    .promo-old-price{font-size:.92rem;color:#83888E;text-decoration:line-through;font-weight:400}
+    .promo-arrow{color:#A98A4A;font-weight:600;font-size:1.1rem}
+    .promo-new-price{font-family:'Cormorant Garamond','Jost',serif;font-size:1.6rem;font-weight:600;color:#1A3B30}
+    .promo-savings{font-size:.7rem;color:#86682F;letter-spacing:2px;text-transform:uppercase;font-weight:500;margin:0 0 18px}
+    .promo-flyer-btn{display:flex;align-items:center;justify-content:center;width:100%;padding:14px 20px;background:#1A3B30;color:#F7F4EF;text-decoration:none;border-radius:2px;font-weight:500;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;box-shadow:0 10px 24px rgba(26,59,48,.24);transition:background .25s ease,transform .25s ease;box-sizing:border-box}
+    .promo-flyer-btn:hover{transform:translateY(-2px);background:#2E5748}
+    .promo-flyer-secondary{margin-top:12px;background:none;border:none;color:#83888E;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:1.2px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+    .promo-flyer-secondary:hover{color:#1A3B30}
     @media (max-width:480px){
     .promo-flyer{max-width:340px}
     .promo-flyer-image-wrap{height:210px}
     .promo-flyer-content{padding:16px 18px 20px}
     .promo-flyer-content h2{font-size:1.35rem}
     .promo-flyer-tagline{font-size:.78rem;margin-bottom:12px}
-    .promo-new-price{font-size:1.3rem}
+    .promo-new-price{font-size:1.35rem}
     .promo-old-price{font-size:.85rem}
     }
     @media (max-height:640px){
