@@ -565,7 +565,7 @@ const products = [
             emptyState.classList.remove('active');
             resultsCount.textContent = filteredProducts.length;
 
-            grid.innerHTML = filteredProducts.map(product => `
+            const cardHTML = (product) => `
                 <div class="product-card" data-categories="${product.categories.join(' ')}">
                     <div class="product-image-container" onclick="openLightbox('${product.image}', '${product.name}', '${formatPrice(product.price)}')">
                         <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
@@ -599,7 +599,35 @@ const products = [
                         </div>
                     </div>
                 </div>
-            `).join('');
+            `;
+
+            const BANDAS = [
+                { kicker: 'Para el d\u00eda a d\u00eda', titulo: 'Detalles hasta $100.000',
+                  sub: 'Peque\u00f1os, frescos y suficientes para alegrarle el d\u00eda a alguien',
+                  test: p => p.price > 0 && p.price < 100000 },
+                { kicker: 'Los m\u00e1s pedidos', titulo: 'Arreglos de $100.000 a $200.000',
+                  sub: 'El punto justo entre tama\u00f1o y precio, listos para salir hoy',
+                  test: p => p.price >= 100000 && p.price <= 200000 },
+                { kicker: 'L\u00ednea premium', titulo: 'Arreglos desde $200.000',
+                  sub: 'Piezas grandes para aniversarios, pedidas de mano y fechas que no se repiten',
+                  test: p => p.price > 200000 },
+                { kicker: 'A tu medida', titulo: 'Cotiza tu detalle',
+                  sub: 'Osos gigantes y decoraci\u00f3n con globos que armamos seg\u00fan lo que tengas en mente',
+                  test: p => !p.price }
+            ];
+
+            const ordenados = filteredProducts.slice().sort(
+                (a, b) => (a.price || Infinity) - (b.price || Infinity));
+
+            grid.innerHTML = BANDAS.map(banda => {
+                const items = ordenados.filter(banda.test);
+                if (!items.length) return '';
+                return '<div class="band-heading">'
+                     + '<span class="band-kicker">' + banda.kicker + '</span>'
+                     + '<h2>' + banda.titulo + '</h2>'
+                     + '<p>' + banda.sub + '</p>'
+                     + '</div>' + items.map(cardHTML).join('');
+            }).join('');
         }
 
         // Formatear precio

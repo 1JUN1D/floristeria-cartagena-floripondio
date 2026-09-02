@@ -326,6 +326,44 @@
             margin-top: clamp(2.4rem, 4vw, 3.4rem);
         }
 
+
+        .band-heading {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin: 2.4rem 0 0.2rem;
+        }
+        .band-heading:first-child { margin-top: 0; }
+        .band-kicker {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--oro);
+            margin-bottom: 0.65rem;
+        }
+        .band-heading h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.6rem, 3vw, 2.15rem);
+            font-weight: 600;
+            color: var(--verde);
+            margin: 0 0 0.4rem;
+        }
+        .band-heading p {
+            font-size: 0.93rem;
+            color: var(--texto-suave);
+            margin: 0 auto;
+            max-width: 48ch;
+            line-height: 1.65;
+        }
+        .band-heading::after {
+            content: '';
+            display: block;
+            width: 66px; height: 1px;
+            margin: 1rem auto 0;
+            background: linear-gradient(90deg, transparent, var(--oro-claro), transparent);
+        }
+
         .product-card {
             background: var(--blanco);
             border: 1px solid var(--linea);
@@ -1611,7 +1649,7 @@
             if (filter !== 'todos') {
                 filtered = products.filter(p => p.categories.includes(filter));
             }
-            grid.innerHTML = filtered.map(product => {
+            const cardHTML = (product) => {
                 const precioTxt = (product.price === null || product.price === undefined)
                           ? '' : ' por ' + formatPrice(product.price);
                 const msg = 'Código ' + product.code + ' — Hola, quiero este arreglo a domicilio: ' + product.name
@@ -1643,6 +1681,35 @@
                         </div>
                     </div>
                 </div>`;
+            };
+
+            const BANDAS = [
+                { kicker: 'Para el d\u00eda a d\u00eda', titulo: 'Detalles hasta $100.000',
+                  sub: 'Peque\u00f1os, frescos y suficientes para alegrarle el d\u00eda a alguien',
+                  test: p => p.price > 0 && p.price < 100000 },
+                { kicker: 'Los m\u00e1s pedidos', titulo: 'Arreglos de $100.000 a $200.000',
+                  sub: 'El punto justo entre tama\u00f1o y precio, listos para salir hoy',
+                  test: p => p.price >= 100000 && p.price <= 200000 },
+                { kicker: 'L\u00ednea premium', titulo: 'Arreglos desde $200.000',
+                  sub: 'Piezas grandes para aniversarios, pedidas de mano y fechas que no se repiten',
+                  test: p => p.price > 200000 },
+                { kicker: 'A tu medida', titulo: 'Cotiza tu detalle',
+                  sub: 'Osos gigantes y decoraci\u00f3n con globos que armamos seg\u00fan lo que tengas en mente',
+                  test: p => !p.price }
+            ];
+
+            const ordenados = filtered.slice().sort(
+                (a, b) => ((a.price === null || a.price === undefined) ? Infinity : a.price)
+                        - ((b.price === null || b.price === undefined) ? Infinity : b.price));
+
+            grid.innerHTML = BANDAS.map(banda => {
+                const items = ordenados.filter(banda.test);
+                if (!items.length) return '';
+                return '<div class="band-heading">'
+                     + '<span class="band-kicker">' + banda.kicker + '</span>'
+                     + '<h2>' + banda.titulo + '</h2>'
+                     + '<p>' + banda.sub + '</p>'
+                     + '</div>' + items.map(cardHTML).join('');
             }).join('');
         }
 

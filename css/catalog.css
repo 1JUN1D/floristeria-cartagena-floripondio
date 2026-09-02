@@ -792,3 +792,57 @@
     background: var(--catalog-lavender);
     color: var(--catalog-secondary);
 }
+
+/* ===================================
+   BANDAS DE PRECIO · encabezados de fila
+   =================================== */
+.band-heading {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 2.6rem 0 0.2rem;
+}
+
+.band-heading:first-child { margin-top: 0; }
+
+.band-kicker {
+    display: inline-block;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--catalog-gold-deep);
+    margin-bottom: 0.7rem;
+}
+
+.band-heading h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.5rem, 3vw, 2.05rem);
+    font-weight: 600;
+    color: var(--catalog-secondary);
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.01em;
+}
+
+.band-heading p {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 0.93rem;
+    color: var(--catalog-gray);
+    margin: 0 auto;
+    max-width: 46ch;
+    line-height: 1.6;
+}
+
+.band-heading::after {
+    content: '';
+    display: block;
+    width: 68px;
+    height: 1px;
+    margin: 1.1rem auto 0;
+    background: linear-gradient(90deg, transparent, var(--catalog-gold), transparent);
+}
+
+@media (max-width: 768px) {
+    .band-heading { margin: 1.8rem 0 0.2rem; }
+    .band-heading p { font-size: 0.88rem; }
+}
