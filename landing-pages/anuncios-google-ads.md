@@ -1,4 +1,4 @@
-# Anuncios Google Ads — Floristería Floripondio Cartagena
+# Anuncios Google Ads — Floristería Lirios Cartagena
 
 Activos para la campaña de Búsqueda con CPC manual (4 grupos de anuncios). Todos los textos verificados dentro de los límites de Google Ads: títulos ≤30 caracteres, descripciones ≤90, sitelinks ≤25 (título) y ≤35 (líneas), textos destacados ≤25, valores de fragmentos estructurados ≤25.
 
@@ -19,10 +19,10 @@ Cada grupo usa como URL final su landing page nueva en `/landing-pages/`. En el 
 | 5 | Ramos y Cajas de Rosas | 22 |
 | 6 | Pide Fácil por WhatsApp | 23 |
 | 7 | Domicilio en Toda Cartagena | 27 |
-| 8 | Detalles Desde $62.500 | 22 |
+| 8 | Detalles Desde $88.000 | 22 |
 | 9 | 5 Estrellas en Google | 21 |
 | 10 | Girasoles, Rosas y Jarrones | 27 |
-| 11 | Floristería Floripondio | 23 |
+| 11 | Floristería Lirios | 23 |
 | 12 | ¿Regalas Desde Otra Ciudad? | 27 |
 | 13 | Flores Para Toda Ocasión | 24 |
 | 14 | Foto de Entrega Incluida | 24 |
@@ -33,7 +33,7 @@ Cada grupo usa como URL final su landing page nueva en `/landing-pages/`. En el 
 | # | Descripción | Caracteres |
 |---|-------------|-----------|
 | 1 | Floristería en Cartagena con entrega el mismo día. Pide por WhatsApp y recibe en horas. | 87 |
-| 2 | Ramos, cajas de rosas, girasoles y jarrones con flores frescas del día. Desde $62.500. | 86 |
+| 2 | Ramos, cajas de rosas, girasoles y jarrones con flores frescas del día. Desde $88.000. | 86 |
 | 3 | ¿Estás en otra ciudad? Enviamos tus flores en Cartagena y te confirmamos con foto. | 82 |
 | 4 | Catálogo con precios claros, tarjeta dedicatoria gratis y domicilio en toda Cartagena. | 86 |
 
@@ -54,9 +54,9 @@ Cada grupo usa como URL final su landing page nueva en `/landing-pages/`. En el 
 | 5 | Pide Fácil por WhatsApp | 23 |
 | 6 | Bocagrande, Manga y Centro | 26 |
 | 7 | Flores Frescas del Día | 22 |
-| 8 | Detalles Desde $62.500 | 22 |
+| 8 | Detalles Desde $88.000 | 22 |
 | 9 | Atención Inmediata | 18 |
-| 10 | Floristería Floripondio | 23 |
+| 10 | Floristería Lirios | 23 |
 | 11 | Entrega Hoy Mismo | 17 |
 | 12 | Ramos y Cajas de Rosas | 22 |
 | 13 | 5 Estrellas en Google | 21 |
@@ -89,10 +89,10 @@ Cada grupo usa como URL final su landing page nueva en `/landing-pages/`. En el 
 | 5 | Pide Fácil por WhatsApp | 23 |
 | 6 | Domicilio en Toda Cartagena | 27 |
 | 7 | Sorprende a Quien Quieres | 25 |
-| 8 | Ramos Desde $62.500 | 19 |
+| 8 | Ramos Desde $88.000 | 19 |
 | 9 | Tarjeta Dedicatoria Gratis | 26 |
 | 10 | Foto de Entrega Incluida | 24 |
-| 11 | Floristería Floripondio | 23 |
+| 11 | Floristería Lirios | 23 |
 | 12 | Rosas, Girasoles y Cajas | 24 |
 | 13 | Envíos Desde Otra Ciudad | 24 |
 | 14 | Flores Frescas del Día | 22 |
@@ -126,8 +126,8 @@ Cada grupo usa como URL final su landing page nueva en `/landing-pages/`. En el 
 | 7 | Atención Inmediata WhatsApp | 27 |
 | 8 | Pedestales de Gran Formato | 26 |
 | 9 | Flores Premium del Día | 22 |
-| 10 | Floristería Floripondio | 23 |
-| 11 | Desde $225.000 | 14 |
+| 10 | Floristería Lirios | 23 |
+| 11 | Desde $213.000 | 14 |
 | 12 | Homenajes Corporativos | 22 |
 | 13 | Trato Discreto y Respetuoso | 27 |
 | 14 | Iglesias y Cementerios | 22 |
@@ -150,12 +150,12 @@ Cada grupo usa como URL final su landing page nueva en `/landing-pages/`. En el 
 
 | Texto del enlace | Línea 1 | Línea 2 | URL |
 |------------------|---------|---------|-----|
-| Catálogo con Precios | Ramos, cajas y jarrones | con precio claro desde $62.500 | https://cartagenafloristeria.dondeseria.com/catalogo.html |
+| Catálogo con Precios | Ramos, cajas y jarrones | con precio claro desde $88.000 | https://cartagenafloristeria.dondeseria.com/catalogo.html |
 | Flores a Domicilio | Entrega el mismo día | en toda Cartagena de Indias | https://cartagenafloristeria.dondeseria.com/landing-pages/flores-a-domicilio-cartagena.html |
 | Coronas Fúnebres | Entrega prioritaria a salas | de velación y cementerios | https://cartagenafloristeria.dondeseria.com/landing-pages/coronas-funebres-cartagena.html |
 | Cajas de Rosas | Corazones y sombrereras | con chocolates y globos | https://cartagenafloristeria.dondeseria.com/landing-pages/floristeria-cartagena.html |
-| Girasoles Frescos | Ramos de girasoles del día | desde $87.500 | https://cartagenafloristeria.dondeseria.com/landing-pages/floristeria-cartagena.html |
-| Pedir por WhatsApp | Atención inmediata | de 8:00 am a 6:00 pm | https://wa.me/573043846071 |
+| Girasoles Frescos | Ramos de girasoles del día | desde $150.000 | https://cartagenafloristeria.dondeseria.com/landing-pages/floristeria-cartagena.html |
+| Pedir por WhatsApp | Atención inmediata | de 8:00 am a 6:00 pm | https://wa.me/573004385227 |
 
 Nota: el sitelink "Pedir por WhatsApp" no es aceptado por Google como URL de sitelink (debe ir al mismo dominio); usarlo solo como extensión de llamada o cambiar su URL a la landing principal. Alternativa segura: apuntarlo a `/landing-pages/floristeria-cartagena.html#contacto`.
 
@@ -178,7 +178,7 @@ Nota: el sitelink "Pedir por WhatsApp" no es aceptado por Google como URL de sit
 
 ### Extensión de llamada
 
-Teléfono: +57 304 384 6071 · Solo en horario de atención (8:00–18:00).
+Teléfono: +57 300 438 5227 · Solo en horario de atención (8:00–18:00).
 
 ### Extensión de ubicación
 

@@ -1,0 +1,26 @@
+/* =====================================================
+   TIPOGRAFÍAS DE MARCA · FLORISTERÍA LIRIOS
+   Principal (títulos): Walkingrush
+   Secundaria (textos): BasicCommercial LT Light
+   Para verlas en la web, sube los archivos con licencia web a /assets/fonts/
+   con estos nombres: Walkingrush.woff2 y BasicCommercialLT-Light.woff2.
+   Mientras no estén, el sitio usa DM Serif Display (títulos) y Work Sans (textos).
+   ===================================================== */
+@font-face {
+    font-family: 'Walkingrush';
+    src: local('Walkingrush'), local('Walkingrush Regular'), url('/assets/fonts/Walkingrush.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BasicCommercial LT Light';
+    src: local('BasicCommercial LT Light'), local('BasicCommercialLT-Light'), url('/assets/fonts/BasicCommercialLT-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+/* La tipografía de títulos viene en un solo peso: evita negritas falsas */
+h1, h2, h3, h4, h5, h6, .brand-name, .product-name, .product-title, .section-title, .hero-title {
+    font-synthesis: none;
+}

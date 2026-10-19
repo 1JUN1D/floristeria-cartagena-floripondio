@@ -1,21 +1,21 @@
 /* =====================================================
-   FLORIPONDIO · CATÁLOGO LUXURY v2 — Vitrinas de arco
+   LIRIOS · CATÁLOGO LUXURY v2 — Vitrinas de arco
    CSS dedicado exclusivamente al catálogo de productos
    ===================================================== */
 
 :root {
-    --catalog-primary: #8C5FBF;
-    --catalog-primary-deep: #6E4496;
-    --catalog-secondary: #5A3580;
-    --catalog-accent: #B57EDC;
-    --catalog-gold: #C9A86A;
-    --catalog-gold-deep: #A8853F;
-    --catalog-ink: #14101B;
+    --catalog-primary: #EE82A5;
+    --catalog-primary-deep: #B8466F;
+    --catalog-secondary: #3E584A;
+    --catalog-accent: #F4A7C0;
+    --catalog-gold: #EE82A5;
+    --catalog-gold-deep: #3E584A;
+    --catalog-ink: #1F2C25;
     --catalog-light: #FDFCFB;
-    --catalog-cream: #F8F5F0;
-    --catalog-lavender: #F5F1FA;
-    --catalog-gray: #6B6375;
-    --catalog-hairline: rgba(22, 18, 28, 0.09);
+    --catalog-cream: #FBF5F7;
+    --catalog-lavender: #FCEEF3;
+    --catalog-gray: #5E6B64;
+    --catalog-hairline: rgba(31, 44, 37, 0.09);
 }
 
 /* ===================================
@@ -24,9 +24,9 @@
    =================================== */
 .catalog-hero {
     background:
-        radial-gradient(900px 420px at 50% -150px, rgba(140, 95, 191, 0.45), transparent 70%),
-        radial-gradient(600px 300px at 95% 110%, rgba(201, 168, 106, 0.14), transparent 60%),
-        linear-gradient(160deg, #14101B 0%, #221B2E 100%);
+        radial-gradient(900px 420px at 50% -150px, rgba(238, 130, 165, 0.45), transparent 70%),
+        radial-gradient(600px 300px at 95% 110%, rgba(238, 130, 165, 0.14), transparent 60%),
+        linear-gradient(160deg, #1F2C25 0%, #2E4338 100%);
     color: #fff;
     padding: 158px 0 92px;
     margin-top: 80px;
@@ -37,12 +37,12 @@
 
 /* Marca de agua serif fantasma */
 .catalog-hero::before {
-    content: 'Floripondio';
+    content: 'Lirios';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -54%);
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Walkingrush', 'DM Serif Display', Georgia, serif;
     font-style: italic;
     font-weight: 500;
     font-size: clamp(6rem, 18vw, 13rem);
@@ -69,7 +69,7 @@
 }
 
 .catalog-hero h1 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Walkingrush', 'DM Serif Display', Georgia, serif;
     font-size: clamp(2.5rem, 5.5vw, 4rem);
     margin-bottom: 1.6rem;
     font-weight: 500;
@@ -82,7 +82,7 @@
 .catalog-hero h1::before {
     content: '— Colección floral —';
     display: block;
-    font-family: 'Poppins', system-ui, sans-serif;
+    font-family: 'BasicCommercial LT Light', 'Work Sans', system-ui, sans-serif;
     font-size: 0.66rem;
     font-weight: 500;
     letter-spacing: 0.44em;
@@ -100,7 +100,7 @@
     width: 64px;
     height: 1px;
     background: var(--catalog-gold);
-    box-shadow: 0 0 16px rgba(201, 168, 106, 0.55);
+    box-shadow: 0 0 16px rgba(238, 130, 165, 0.55);
 }
 
 .catalog-hero p {
@@ -137,7 +137,7 @@
     width: min(480px, 100%);
     padding: 0.85rem 1.6rem;
     border-radius: 999px;
-    border: 1px solid rgba(22, 18, 28, 0.14);
+    border: 1px solid rgba(31, 44, 37, 0.14);
     background: #fff;
     font-family: inherit;
     font-size: 0.92rem;
@@ -151,13 +151,13 @@
 }
 
 #product-search::placeholder {
-    color: #9b93a6;
+    color: #8C9891;
     letter-spacing: 0.02em;
 }
 
 #product-search:focus {
     border-color: var(--catalog-primary);
-    box-shadow: 0 0 0 4px rgba(140, 95, 191, 0.12), 0 0 0 1px rgba(201, 168, 106, 0.3);
+    box-shadow: 0 0 0 4px rgba(238, 130, 165, 0.12), 0 0 0 1px rgba(238, 130, 165, 0.3);
 }
 
 .filters-container {
@@ -179,7 +179,7 @@
 
 .filter-btn {
     padding: 0.55rem 1.25rem;
-    border: 1px solid rgba(22, 18, 28, 0.14);
+    border: 1px solid rgba(31, 44, 37, 0.14);
     background: transparent;
     color: var(--catalog-ink);
     border-radius: 999px;
@@ -203,7 +203,7 @@
     background: var(--catalog-ink);
     color: #fff;
     border-color: var(--catalog-ink);
-    box-shadow: 0 0 0 1px rgba(201, 168, 106, 0.5), 0 8px 22px rgba(22, 18, 28, 0.22);
+    box-shadow: 0 0 0 1px rgba(238, 130, 165, 0.5), 0 8px 22px rgba(31, 44, 37, 0.22);
 }
 
 /* ===================================
@@ -212,8 +212,8 @@
 .catalog-section {
     padding: 84px 0 110px;
     background:
-        radial-gradient(800px 400px at 0% 10%, rgba(140, 95, 191, 0.05), transparent 60%),
-        radial-gradient(700px 360px at 100% 80%, rgba(201, 168, 106, 0.07), transparent 60%),
+        radial-gradient(800px 400px at 0% 10%, rgba(238, 130, 165, 0.05), transparent 60%),
+        radial-gradient(700px 360px at 100% 80%, rgba(238, 130, 165, 0.07), transparent 60%),
         var(--catalog-cream);
 }
 
@@ -230,10 +230,10 @@
     background: #fff;
     border-radius: 999px 999px 22px 22px;
     overflow: hidden;
-    border: 1px solid rgba(22, 18, 28, 0.07);
+    border: 1px solid rgba(31, 44, 37, 0.07);
     box-shadow:
-        0 1px 2px rgba(22, 18, 28, 0.04),
-        0 14px 34px rgba(22, 18, 28, 0.06);
+        0 1px 2px rgba(31, 44, 37, 0.04),
+        0 14px 34px rgba(31, 44, 37, 0.06);
     transition: transform 0.4s cubic-bezier(0.25, 0.6, 0.3, 1),
                 box-shadow 0.4s cubic-bezier(0.25, 0.6, 0.3, 1);
     display: flex;
@@ -244,8 +244,8 @@
 .product-card:hover {
     transform: translateY(-9px);
     box-shadow:
-        0 4px 10px rgba(22, 18, 28, 0.05),
-        0 34px 70px rgba(110, 68, 150, 0.18);
+        0 4px 10px rgba(31, 44, 37, 0.05),
+        0 34px 70px rgba(184, 70, 111, 0.18);
 }
 
 /* La flor se exhibe bajo un arco con cerco dorado */
@@ -257,7 +257,7 @@
     cursor: pointer;
     background: var(--catalog-lavender);
     border-radius: 999px 999px 14px 14px;
-    box-shadow: 0 0 0 1px rgba(201, 168, 106, 0.45);
+    box-shadow: 0 0 0 1px rgba(238, 130, 165, 0.45);
 }
 
 .product-image {
@@ -293,7 +293,7 @@
     transform: translate(-50%, -50%) scale(0.88);
     width: 58px;
     height: 58px;
-    background: rgba(20, 16, 27, 0.55);
+    background: rgba(31, 44, 37, 0.55);
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
@@ -337,7 +337,7 @@
 
 /* Florón separador bajo el nombre */
 .product-name {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Walkingrush', 'DM Serif Display', Georgia, serif;
     font-size: 1.38rem;
     color: var(--catalog-ink);
     margin-bottom: 0.9rem;
@@ -399,7 +399,7 @@
 }
 
 .product-price {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Walkingrush', 'DM Serif Display', Georgia, serif;
     font-size: 1.72rem;
     color: var(--catalog-primary-deep);
     font-weight: 700;
@@ -409,7 +409,7 @@
 
 .price-label {
     font-size: 0.6rem;
-    color: #9b93a6;
+    color: #8C9891;
     display: block;
     margin-bottom: 0.3rem;
     text-transform: uppercase;
@@ -421,14 +421,14 @@
     position: absolute;
     top: -0.7rem;
     right: 1rem;
-    background: linear-gradient(135deg, #C9A86A 0%, #A8853F 100%);
+    background: linear-gradient(135deg, #EE82A5 0%, #3E584A 100%);
     color: #fff;
     font-size: 0.6rem;
     font-weight: 700;
     letter-spacing: 0.18em;
     padding: 0.38rem 0.8rem;
     border-radius: 999px;
-    box-shadow: 0 4px 14px rgba(201, 168, 106, 0.45);
+    box-shadow: 0 4px 14px rgba(238, 130, 165, 0.45);
     z-index: 2;
 }
 
@@ -436,7 +436,7 @@
     text-decoration: line-through;
     text-decoration-color: var(--catalog-primary);
     text-decoration-thickness: 1.5px;
-    color: #9b93a6;
+    color: #8C9891;
     font-size: 0.8rem;
     font-weight: 500;
     text-transform: none;
@@ -521,7 +521,7 @@
     max-width: 100%;
     max-height: 78vh;
     border-radius: 14px;
-    box-shadow: 0 0 0 1px rgba(201, 168, 106, 0.4), 0 30px 80px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0 1px rgba(238, 130, 165, 0.4), 0 30px 80px rgba(0, 0, 0, 0.6);
 }
 
 .lightbox-close {
@@ -557,7 +557,7 @@
 }
 
 .lightbox-info h3 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Walkingrush', 'DM Serif Display', Georgia, serif;
     color: var(--catalog-ink);
     margin-bottom: 0.4rem;
     font-weight: 600;
@@ -565,7 +565,7 @@
 
 .lightbox-info p {
     color: var(--catalog-primary-deep);
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Walkingrush', 'DM Serif Display', Georgia, serif;
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -584,7 +584,7 @@
 }
 
 .empty-state h3 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Walkingrush', 'DM Serif Display', Georgia, serif;
     font-size: 1.9rem;
     font-weight: 600;
     color: var(--catalog-ink);
@@ -731,13 +731,13 @@
     height: 54px;
     background: var(--catalog-ink);
     color: #fff;
-    border: 1px solid rgba(201, 168, 106, 0.4);
+    border: 1px solid rgba(238, 130, 165, 0.4);
     border-radius: 50%;
     cursor: pointer;
     display: none;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 12px 30px rgba(22, 18, 28, 0.3);
+    box-shadow: 0 12px 30px rgba(31, 44, 37, 0.3);
     transition: all 0.3s cubic-bezier(0.25, 0.6, 0.3, 1);
     z-index: 1000;
 }
@@ -749,7 +749,7 @@
 .scroll-top:hover {
     background: var(--catalog-primary-deep);
     transform: translateY(-4px);
-    box-shadow: 0 16px 40px rgba(110, 68, 150, 0.4);
+    box-shadow: 0 16px 40px rgba(184, 70, 111, 0.4);
 }
 
 .scroll-top svg {
@@ -777,7 +777,7 @@
     border-radius: 999px;
     background: var(--catalog-lavender);
     color: var(--catalog-primary-deep);
-    border: 1px solid rgba(140, 95, 191, 0.18);
+    border: 1px solid rgba(238, 130, 165, 0.18);
     line-height: 1;
 }
 
@@ -785,7 +785,7 @@
     background: var(--catalog-ink);
     color: #fff;
     border-color: var(--catalog-ink);
-    box-shadow: 0 0 0 1px rgba(201, 168, 106, 0.45);
+    box-shadow: 0 0 0 1px rgba(238, 130, 165, 0.45);
 }
 
 .product-tag-cat {
@@ -806,7 +806,7 @@
 
 .band-kicker {
     display: inline-block;
-    font-family: 'Poppins', system-ui, sans-serif;
+    font-family: 'BasicCommercial LT Light', 'Work Sans', system-ui, sans-serif;
     font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.3em;
@@ -816,7 +816,7 @@
 }
 
 .band-heading h2 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Walkingrush', 'DM Serif Display', Georgia, serif;
     font-size: clamp(1.5rem, 3vw, 2.05rem);
     font-weight: 600;
     color: var(--catalog-secondary);
@@ -825,7 +825,7 @@
 }
 
 .band-heading p {
-    font-family: 'Poppins', system-ui, sans-serif;
+    font-family: 'BasicCommercial LT Light', 'Work Sans', system-ui, sans-serif;
     font-size: 0.93rem;
     color: var(--catalog-gray);
     margin: 0 auto;

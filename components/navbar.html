@@ -7,14 +7,14 @@
     background: rgba(253, 252, 251, 0.92);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(22, 18, 28, 0.07);
+    border-bottom: 1px solid rgba(31, 44, 37, 0.07);
     z-index: 1000;
     transition: all 0.3s ease;
 }
 
 .navbar-scrolled {
     background: rgba(253, 252, 251, 0.97);
-    box-shadow: 0 8px 30px rgba(22, 18, 28, 0.06);
+    box-shadow: 0 8px 30px rgba(31, 44, 37, 0.06);
 }
 
 .navbar-content {
@@ -34,13 +34,14 @@
 
 .logo-circle {
     width: 58px;
-    height: 58px;
-    border-radius: 50%;
+    height: 62px;
+    border-radius: 12px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(201, 168, 106, 0.55), 0 0 0 4px rgba(253, 252, 251, 1), 0 0 0 5px rgba(22, 18, 28, 0.06);
+    background: #EE82A5;
+    box-shadow: 0 6px 18px rgba(238, 130, 165, 0.35);
     transition: transform 0.3s ease;
 }
 
@@ -49,9 +50,8 @@
 }
 
 .logo-circle img {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -61,10 +61,10 @@
 }
 
 .logo-text .brand-name {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 1.4rem;
     font-weight: 600;
-    color: #16121C;
+    color: #1F2C25;
     line-height: 1;
     margin-bottom: 0.3rem;
     letter-spacing: 0.01em;
@@ -72,7 +72,7 @@
 
 .logo-text .brand-tagline {
     font-size: 0.66rem;
-    color: #A8853F;
+    color: #3E584A;
     text-transform: uppercase;
     letter-spacing: 0.34em;
     font-weight: 600;
@@ -86,7 +86,7 @@
 }
 
 .navbar-menu a {
-    color: #2B2433;
+    color: #27342D;
     font-weight: 500;
     font-size: 0.78rem;
     text-transform: uppercase;
@@ -102,12 +102,12 @@
     left: 0;
     width: 0;
     height: 1px;
-    background: #C9A86A;
+    background: #EE82A5;
     transition: width 0.3s ease;
 }
 
 .navbar-menu a:hover {
-    color: #6E4496;
+    color: #B8466F;
 }
 
 .navbar-menu a:hover::after {
@@ -126,9 +126,9 @@
     gap: 0.5rem;
     padding: 0.65rem 1.3rem;
     background: transparent;
-    border: 1px solid rgba(22, 18, 28, 0.14);
+    border: 1px solid rgba(31, 44, 37, 0.14);
     border-radius: 999px;
-    color: #2B2433;
+    color: #27342D;
     font-weight: 500;
     font-size: 0.86rem;
     transition: all 0.3s ease;
@@ -136,9 +136,9 @@
 }
 
 .navbar-phone:hover {
-    border-color: #6E4496;
-    color: #6E4496;
-    background: #F5F1FA;
+    border-color: #B8466F;
+    color: #B8466F;
+    background: #FCEEF3;
     transform: translateY(-1px);
 }
 
@@ -175,7 +175,7 @@
 .hamburger span {
     width: 25px;
     height: 2px;
-    background: #16121C;
+    background: #1F2C25;
     border-radius: 3px;
     transition: all 0.3s ease;
 }
@@ -245,13 +245,9 @@
     }
     
     .logo-circle {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .logo-circle img {
-        width: 44px;
-        height: 44px;
+        width: 48px;
+        height: 52px;
+        border-radius: 10px;
     }
 }
 </style>
@@ -260,11 +256,10 @@
     <div class="navbar-content">
         <a href="/" class="navbar-logo">
             <div class="logo-circle">
-                <!-- Aquí va tu logo circular -->
-                <img src="/assets/logo.webp" alt="Floristería Floripondio Logo" onerror="this.style.display='none'">
+                                <img src="/assets/logo.png" alt="Logo Floristería Lirios">
             </div>
             <div class="logo-text">
-                <span class="brand-name">Floristería Floripondio</span>
+                <span class="brand-name">Floristería Lirios</span>
                 <span class="brand-tagline">Cartagena</span>
             </div>
         </a>
@@ -277,9 +272,21 @@
         </ul>
         
         <div class="navbar-cta">
-            <a href="tel:+573043846071" class="navbar-phone">
-                📞 304 384 6071
+            <a href="tel:+573004385227" class="navbar-phone">
+                📞 300 438 5227
             </a>
-            <a href="https://wa.me/573043846071?text=Hola,%20quisiera%20información" class="navbar-whatsapp" target="_blank" onclick="trackWhatsAppClick('navbar')">
+            <a href="https://wa.me/573004385227?text=Hola,%20quisiera%20información" class="navbar-whatsapp" target="_blank" onclick="trackWhatsAppClick('navbar')">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 0.5rem;">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                WhatsApp
+            </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMobileMenu()" aria-label="Abrir menú" role="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>

@@ -158,7 +158,7 @@ function handleContactForm(event) {
     
     // Aquí puedes enviar los datos a un servidor o crear un mensaje de WhatsApp
     const message = `Hola, mi nombre es ${data.name}. ${data.message}`;
-    const whatsappUrl = `https://wa.me/573043846071?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/573004385227?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappUrl, '_blank');
 }
@@ -195,7 +195,7 @@ function showNotification(message, duration = 3000) {
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background: #9966CC;
+        background: #EE82A5;
         color: white;
         padding: 1rem 2rem;
         border-radius: 50px;

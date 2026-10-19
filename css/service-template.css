@@ -48,13 +48,13 @@
 }
 
 .service-hero-content .breadcrumb a {
-    color: #9966CC;
+    color: #EE82A5;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .service-hero-content .breadcrumb a:hover {
-    color: #7A4FA8;
+    color: #B8466F;
 }
 
 .service-hero-content .breadcrumb .separator {
@@ -62,15 +62,15 @@
 }
 
 .service-hero-content .breadcrumb .current {
-    color: #1a1a1a;
+    color: #1F2C25;
     font-weight: 600;
 }
 
 .service-hero-content h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 3rem;
     font-weight: 700;
-    color: #1a1a1a;
+    color: #1F2C25;
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
@@ -105,9 +105,9 @@
 }
 
 .service-main-content h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 2.25rem;
-    color: #1a1a1a;
+    color: #1F2C25;
     margin-bottom: 1.5rem;
     margin-top: 2.5rem;
 }
@@ -117,9 +117,9 @@
 }
 
 .service-main-content h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 1.75rem;
-    color: #9966CC;
+    color: #EE82A5;
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
@@ -144,8 +144,8 @@
 }
 
 .service-highlight-box {
-    background: linear-gradient(135deg, rgba(153, 102, 204, 0.05) 0%, rgba(181, 126, 220, 0.05) 100%);
-    border-left: 4px solid #9966CC;
+    background: linear-gradient(135deg, rgba(238, 130, 165, 0.05) 0%, rgba(244, 167, 192, 0.05) 100%);
+    border-left: 4px solid #EE82A5;
     padding: 2rem;
     border-radius: 12px;
     margin: 2rem 0;
@@ -157,7 +157,7 @@
 
 .service-price-box {
     background: #f9f9f9;
-    border: 2px solid #9966CC;
+    border: 2px solid #EE82A5;
     border-radius: 16px;
     padding: 2rem;
     margin: 2rem 0;
@@ -173,9 +173,9 @@
 }
 
 .service-price-box .price-range {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 2.5rem;
-    color: #9966CC;
+    color: #EE82A5;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -203,9 +203,9 @@
 }
 
 .sidebar-card h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 1.5rem;
-    color: #1a1a1a;
+    color: #1F2C25;
     margin-bottom: 1.5rem;
 }
 
@@ -228,14 +228,14 @@
 
 .sidebar-features-list li::before {
     content: '✓';
-    color: #B57EDC;
+    color: #F4A7C0;
     font-weight: bold;
     font-size: 1.2rem;
     flex-shrink: 0;
 }
 
 .sidebar-cta-card {
-    background: linear-gradient(135deg, #9966CC 0%, #7A4FA8 100%);
+    background: linear-gradient(135deg, #EE82A5 0%, #B8466F 100%);
     color: #ffffff;
     border: none;
 }
@@ -251,13 +251,13 @@
 
 .sidebar-cta-card .btn {
     background: #ffffff;
-    color: #9966CC;
+    color: #EE82A5;
     width: 100%;
     justify-content: center;
 }
 
 .sidebar-cta-card .btn:hover {
-    background: #B57EDC;
+    background: #F4A7C0;
     color: #ffffff;
 }
 
@@ -281,13 +281,13 @@
 
 .feature-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(153, 102, 204, 0.15);
+    box-shadow: 0 8px 24px rgba(238, 130, 165, 0.15);
 }
 
 .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #9966CC 0%, #7A4FA8 100%);
+    background: linear-gradient(135deg, #EE82A5 0%, #B8466F 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -297,9 +297,9 @@
 }
 
 .feature-item h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 1.25rem;
-    color: #1a1a1a;
+    color: #1F2C25;
     margin-bottom: 0.75rem;
 }
 
@@ -349,9 +349,9 @@
 }
 
 .faq-question {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 1.25rem;
-    color: #1a1a1a;
+    color: #1F2C25;
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
@@ -386,7 +386,7 @@
 
 .related-service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 32px rgba(153, 102, 204, 0.15);
+    box-shadow: 0 12px 32px rgba(238, 130, 165, 0.15);
 }
 
 .related-service-image {
@@ -400,9 +400,9 @@
 }
 
 .related-service-content h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 1.5rem;
-    color: #1a1a1a;
+    color: #1F2C25;
     margin-bottom: 0.75rem;
 }
 

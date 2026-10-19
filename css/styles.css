@@ -1,45 +1,45 @@
 /* =====================================================
-   FLORIPONDIO · LUXURY DESIGN SYSTEM v2 — Edición 360
+   LIRIOS · LUXURY DESIGN SYSTEM v2 — Edición 360
    Hero inmersivo · Galería de arcos · Filas editoriales
-   Tinta profunda, lila floripondio, blanco cálido, oro champán.
+   Tinta profunda, rosa Lirios, blanco cálido, oro champán.
    CSS puro: cero recursos externos nuevos.
    ===================================================== */
 :root {
     /* Colores principales */
-    --color-primary: #8C5FBF;
-    --color-primary-deep: #6E4496;
-    --color-secondary: #5A3580;
-    --color-accent: #B57EDC;
-    --color-gold: #C9A86A;
-    --color-gold-deep: #A8853F;
-    --color-gold-soft: rgba(201, 168, 106, 0.4);
-    --color-ink: #14101B;
-    --color-ink-soft: #221B2E;
-    --color-dark: #1a1a1a;
+    --color-primary: #EE82A5;
+    --color-primary-deep: #B8466F;
+    --color-secondary: #3E584A;
+    --color-accent: #F4A7C0;
+    --color-gold: #EE82A5;
+    --color-gold-deep: #3E584A;
+    --color-gold-soft: rgba(238, 130, 165, 0.4);
+    --color-ink: #1F2C25;
+    --color-ink-soft: #2E4338;
+    --color-dark: #1F2C25;
     --color-light: #FDFCFB;
-    --color-cream: #F8F5F0;
-    --color-lavender: #F5F1FA;
-    --color-gray: #f5f3f7;
-    --color-text: #2B2433;
-    --color-text-light: #6B6375;
-    --hairline: rgba(22, 18, 28, 0.09);
+    --color-cream: #FBF5F7;
+    --color-lavender: #FCEEF3;
+    --color-gray: #F8F2F4;
+    --color-text: #27342D;
+    --color-text-light: #5E6B64;
+    --hairline: rgba(31, 44, 37, 0.09);
 
     /* Gradientes */
-    --gradient-primary: linear-gradient(135deg, #8C5FBF 0%, #6E4496 100%);
-    --gradient-accent: linear-gradient(135deg, #B57EDC 0%, #8C5FBF 100%);
-    --gradient-dark: linear-gradient(160deg, #14101B 0%, #221B2E 100%);
+    --gradient-primary: linear-gradient(135deg, #EE82A5 0%, #B8466F 100%);
+    --gradient-accent: linear-gradient(135deg, #F4A7C0 0%, #EE82A5 100%);
+    --gradient-dark: linear-gradient(160deg, #1F2C25 0%, #2E4338 100%);
     --gradient-gold: linear-gradient(90deg, transparent, var(--color-gold), transparent);
 
     /* Sombras */
-    --shadow-sm: 0 1px 2px rgba(22, 18, 28, 0.05), 0 4px 12px rgba(22, 18, 28, 0.04);
-    --shadow-md: 0 2px 6px rgba(22, 18, 28, 0.05), 0 12px 32px rgba(22, 18, 28, 0.08);
-    --shadow-lg: 0 4px 10px rgba(22, 18, 28, 0.06), 0 24px 56px rgba(22, 18, 28, 0.12);
-    --shadow-xl: 0 8px 20px rgba(22, 18, 28, 0.08), 0 40px 90px rgba(22, 18, 28, 0.16);
-    --shadow-lilac: 0 10px 30px rgba(110, 68, 150, 0.22);
+    --shadow-sm: 0 1px 2px rgba(31, 44, 37, 0.05), 0 4px 12px rgba(31, 44, 37, 0.04);
+    --shadow-md: 0 2px 6px rgba(31, 44, 37, 0.05), 0 12px 32px rgba(31, 44, 37, 0.08);
+    --shadow-lg: 0 4px 10px rgba(31, 44, 37, 0.06), 0 24px 56px rgba(31, 44, 37, 0.12);
+    --shadow-xl: 0 8px 20px rgba(31, 44, 37, 0.08), 0 40px 90px rgba(31, 44, 37, 0.16);
+    --shadow-lilac: 0 10px 30px rgba(184, 70, 111, 0.22);
 
     /* Tipografía */
-    --font-heading: 'Playfair Display', Georgia, serif;
-    --font-body: 'Poppins', system-ui, sans-serif;
+    --font-heading: 'Walkingrush', 'DM Serif Display', Georgia, serif;
+    --font-body: 'BasicCommercial LT Light', 'Work Sans', system-ui, sans-serif;
 
     /* Transiciones */
     --transition-fast: 0.2s ease;
@@ -73,7 +73,7 @@ body {
 }
 
 ::selection {
-    background: rgba(140, 95, 191, 0.25);
+    background: rgba(238, 130, 165, 0.25);
     color: var(--color-ink);
 }
 
@@ -110,15 +110,15 @@ a {
     align-items: center;
     padding: 150px 0 100px;
     background:
-        radial-gradient(1000px 640px at 88% 8%, rgba(140, 95, 191, 0.10), transparent 62%),
-        radial-gradient(760px 520px at -5% 95%, rgba(201, 168, 106, 0.10), transparent 60%),
+        radial-gradient(1000px 640px at 88% 8%, rgba(238, 130, 165, 0.10), transparent 62%),
+        radial-gradient(760px 520px at -5% 95%, rgba(238, 130, 165, 0.10), transparent 60%),
         var(--color-light);
     overflow: hidden;
 }
 
 /* Marca de agua serif, casi invisible */
 .hero-section::before {
-    content: 'Floripondio';
+    content: 'Lirios';
     position: absolute;
     top: 8%;
     left: -2%;
@@ -127,7 +127,7 @@ a {
     font-weight: 500;
     font-size: clamp(7rem, 16vw, 13rem);
     line-height: 1;
-    color: rgba(110, 68, 150, 0.045);
+    color: rgba(184, 70, 111, 0.045);
     white-space: nowrap;
     pointer-events: none;
     user-select: none;
@@ -164,7 +164,7 @@ a {
     width: 76px;
     height: 1px;
     margin-top: 1.6rem;
-    background: linear-gradient(90deg, var(--color-gold), rgba(201, 168, 106, 0));
+    background: linear-gradient(90deg, var(--color-gold), rgba(238, 130, 165, 0));
 }
 
 /* Breadcrumb → sello editorial */
@@ -227,7 +227,7 @@ a {
     right: 0;
     bottom: 18px;
     left: 18px;
-    border: 1px solid rgba(201, 168, 106, 0.55);
+    border: 1px solid rgba(238, 130, 165, 0.55);
     border-radius: 999px 999px 28px 28px;
     pointer-events: none;
     z-index: 0;
@@ -243,7 +243,7 @@ a {
     color: var(--color-gold);
     font-size: 1.35rem;
     z-index: 3;
-    text-shadow: 0 2px 10px rgba(201, 168, 106, 0.4);
+    text-shadow: 0 2px 10px rgba(238, 130, 165, 0.4);
 }
 
 .video-container {
@@ -253,10 +253,10 @@ a {
     aspect-ratio: 4 / 5;
     background: var(--color-ink);
     box-shadow:
-        0 0 0 1px rgba(201, 168, 106, 0.5),
+        0 0 0 1px rgba(238, 130, 165, 0.5),
         0 0 0 11px var(--color-light),
-        0 0 0 12px rgba(22, 18, 28, 0.08),
-        0 44px 90px rgba(22, 18, 28, 0.18);
+        0 0 0 12px rgba(31, 44, 37, 0.08),
+        0 44px 90px rgba(31, 44, 37, 0.18);
     z-index: 1;
 }
 
@@ -269,7 +269,7 @@ a {
 .video-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(110, 68, 150, 0.10) 0%, rgba(22, 18, 28, 0) 40%, rgba(22, 18, 28, 0.30) 100%);
+    background: linear-gradient(180deg, rgba(184, 70, 111, 0.10) 0%, rgba(31, 44, 37, 0) 40%, rgba(31, 44, 37, 0.30) 100%);
     pointer-events: none;
 }
 
@@ -297,7 +297,7 @@ a {
 .btn-primary {
     background: var(--gradient-primary);
     color: #fff;
-    box-shadow: 0 14px 40px rgba(110, 68, 150, 0.4);
+    box-shadow: 0 14px 40px rgba(184, 70, 111, 0.4);
     position: relative;
     overflow: hidden;
 }
@@ -313,7 +313,7 @@ a {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 20px 50px rgba(110, 68, 150, 0.5);
+    box-shadow: 0 20px 50px rgba(184, 70, 111, 0.5);
 }
 
 .btn-primary:hover::after {
@@ -324,7 +324,7 @@ a {
 .btn-whatsapp {
     background: transparent;
     color: var(--color-ink);
-    border-color: rgba(22, 18, 28, 0.2);
+    border-color: rgba(31, 44, 37, 0.2);
 }
 
 .btn-whatsapp svg {
@@ -341,7 +341,7 @@ a {
 .btn-secondary {
     background: transparent;
     color: var(--color-ink);
-    border-color: rgba(22, 18, 28, 0.18);
+    border-color: rgba(31, 44, 37, 0.18);
     padding: 0.85rem 1.8rem;
     font-size: 0.72rem;
 }
@@ -375,15 +375,15 @@ a {
 .testimonials-carousel {
     padding: 110px 0 96px;
     background:
-        radial-gradient(700px 300px at 15% 0%, rgba(140, 95, 191, 0.07), transparent 60%),
-        radial-gradient(600px 300px at 90% 100%, rgba(201, 168, 106, 0.09), transparent 60%),
+        radial-gradient(700px 300px at 15% 0%, rgba(238, 130, 165, 0.07), transparent 60%),
+        radial-gradient(600px 300px at 90% 100%, rgba(238, 130, 165, 0.09), transparent 60%),
         var(--color-cream);
     overflow: hidden;
     position: relative;
 }
 
 .testimonials-carousel::before {
-    content: 'Momentos Floripondio';
+    content: 'Momentos Lirios';
     position: absolute;
     top: 34px;
     left: 50%;
@@ -433,11 +433,11 @@ a {
     border-radius: 999px 999px 20px 20px;
     overflow: hidden;
     background: #fff;
-    border: 1px solid rgba(22, 18, 28, 0.08);
+    border: 1px solid rgba(31, 44, 37, 0.08);
     box-shadow:
         0 0 0 7px #fff,
-        0 0 0 8px rgba(201, 168, 106, 0.35),
-        0 22px 44px rgba(22, 18, 28, 0.12);
+        0 0 0 8px rgba(238, 130, 165, 0.35),
+        0 22px 44px rgba(31, 44, 37, 0.12);
     transition: transform var(--transition-normal), box-shadow var(--transition-normal);
 }
 
@@ -452,7 +452,7 @@ a {
     box-shadow:
         0 0 0 7px #fff,
         0 0 0 8px var(--color-gold),
-        0 30px 60px rgba(110, 68, 150, 0.22);
+        0 30px 60px rgba(184, 70, 111, 0.22);
 }
 
 .testimonial-card img {
@@ -547,15 +547,15 @@ a {
     background: var(--color-lavender);
     box-shadow:
         0 0 0 10px var(--color-light),
-        0 0 0 11px rgba(201, 168, 106, 0.4),
-        0 30px 70px rgba(22, 18, 28, 0.14);
+        0 0 0 11px rgba(238, 130, 165, 0.4),
+        0 30px 70px rgba(31, 44, 37, 0.14);
 }
 
 .category-image::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(22, 18, 28, 0) 72%, rgba(22, 18, 28, 0.22) 100%);
+    background: linear-gradient(180deg, rgba(31, 44, 37, 0) 72%, rgba(31, 44, 37, 0.22) 100%);
     pointer-events: none;
 }
 
@@ -589,7 +589,7 @@ a {
     font-style: italic;
     line-height: 1;
     color: transparent;
-    -webkit-text-stroke: 1px rgba(140, 95, 191, 0.4);
+    -webkit-text-stroke: 1px rgba(238, 130, 165, 0.4);
     margin-bottom: 1.1rem;
 }
 
@@ -629,8 +629,8 @@ a {
 .cta-section {
     padding: 130px 0;
     background:
-        radial-gradient(1000px 500px at 50% -200px, rgba(140, 95, 191, 0.38), transparent 70%),
-        radial-gradient(700px 400px at 100% 120%, rgba(201, 168, 106, 0.12), transparent 60%),
+        radial-gradient(1000px 500px at 50% -200px, rgba(238, 130, 165, 0.38), transparent 70%),
+        radial-gradient(700px 400px at 100% 120%, rgba(238, 130, 165, 0.12), transparent 60%),
         var(--gradient-dark);
     text-align: center;
     position: relative;
@@ -641,7 +641,7 @@ a {
     content: '';
     position: absolute;
     inset: 22px;
-    border: 1px solid rgba(201, 168, 106, 0.22);
+    border: 1px solid rgba(238, 130, 165, 0.22);
     border-radius: 4px;
     pointer-events: none;
 }
@@ -770,10 +770,10 @@ a {
 
     .video-container {
         box-shadow:
-            0 0 0 1px rgba(201, 168, 106, 0.5),
+            0 0 0 1px rgba(238, 130, 165, 0.5),
             0 0 0 7px var(--color-light),
-            0 0 0 8px rgba(22, 18, 28, 0.08),
-            0 28px 60px rgba(22, 18, 28, 0.16);
+            0 0 0 8px rgba(31, 44, 37, 0.08),
+            0 28px 60px rgba(31, 44, 37, 0.16);
     }
 
     .btn {
@@ -789,8 +789,8 @@ a {
         height: 264px;
         box-shadow:
             0 0 0 5px #fff,
-            0 0 0 6px rgba(201, 168, 106, 0.35),
-            0 16px 34px rgba(22, 18, 28, 0.12);
+            0 0 0 6px rgba(238, 130, 165, 0.35),
+            0 16px 34px rgba(31, 44, 37, 0.12);
     }
 
     .testimonial-card:nth-child(even) {

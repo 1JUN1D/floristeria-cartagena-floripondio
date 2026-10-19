@@ -29,9 +29,9 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, 
-        rgba(26, 26, 26, 0.85) 0%, 
-        rgba(153, 102, 204, 0.75) 50%,
-        rgba(181, 126, 220, 0.65) 100%
+        rgba(31, 44, 37, 0.85) 0%, 
+        rgba(238, 130, 165, 0.75) 50%,
+        rgba(244, 167, 192, 0.65) 100%
     );
     z-index: 1;
 }
@@ -56,7 +56,7 @@
 }
 
 .category-hero-content .breadcrumb a {
-    color: #B57EDC;
+    color: #F4A7C0;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -74,7 +74,7 @@
 }
 
 .category-hero-content h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 3.5rem;
     font-weight: 700;
     color: #ffffff;
@@ -106,9 +106,9 @@
 }
 
 .section-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 3rem;
-    color: #1a1a1a;
+    color: #1F2C25;
     margin-bottom: 1rem;
 }
 
@@ -130,25 +130,25 @@
     padding: 3rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    border-left: 4px solid #9966CC;
+    border-left: 4px solid #EE82A5;
 }
 
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 32px rgba(153, 102, 204, 0.15);
-    border-left-color: #B57EDC;
+    box-shadow: 0 12px 32px rgba(238, 130, 165, 0.15);
+    border-left-color: #F4A7C0;
 }
 
 .service-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #9966CC 0%, #7A4FA8 100%);
+    background: linear-gradient(135deg, #EE82A5 0%, #B8466F 100%);
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
-    box-shadow: 0 8px 24px rgba(153, 102, 204, 0.3);
+    box-shadow: 0 8px 24px rgba(238, 130, 165, 0.3);
 }
 
 .service-icon svg {
@@ -156,9 +156,9 @@
 }
 
 .service-content h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 2rem;
-    color: #1a1a1a;
+    color: #1F2C25;
     margin-bottom: 1.5rem;
 }
 
@@ -179,8 +179,8 @@
 .feature-tag {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: rgba(153, 102, 204, 0.08);
-    color: #7A4FA8;
+    background: rgba(238, 130, 165, 0.08);
+    color: #B8466F;
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 500;
@@ -190,7 +190,7 @@
     display: inline-flex;
     align-items: center;
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #B57EDC 0%, #8E5BBF 100%);
+    background: linear-gradient(135deg, #F4A7C0 0%, #EE82A5 100%);
     color: #ffffff;
     border-radius: 50px;
     font-weight: 600;
@@ -198,13 +198,13 @@
     letter-spacing: 0.5px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(181, 126, 220, 0.3);
+    box-shadow: 0 4px 12px rgba(244, 167, 192, 0.3);
 }
 
 .btn-service:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(181, 126, 220, 0.4);
-    background: linear-gradient(135deg, #8E5BBF 0%, #558B2F 100%);
+    box-shadow: 0 6px 20px rgba(244, 167, 192, 0.4);
+    background: linear-gradient(135deg, #EE82A5 0%, #558B2F 100%);
 }
 
 /* ===================================
@@ -212,12 +212,12 @@
    =================================== */
 .category-cta {
     padding: 100px 0;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: linear-gradient(135deg, #1F2C25 0%, #2E4338 100%);
     text-align: center;
 }
 
 .category-cta .cta-content h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Walkingrush', 'DM Serif Display', serif;
     font-size: 3rem;
     color: #ffffff;
     margin-bottom: 1rem;
@@ -231,11 +231,11 @@
 }
 
 .category-cta .btn-primary {
-    background: linear-gradient(135deg, #9966CC 0%, #7A4FA8 100%);
+    background: linear-gradient(135deg, #EE82A5 0%, #B8466F 100%);
 }
 
 .category-cta .btn-primary:hover {
-    background: linear-gradient(135deg, #B57EDC 0%, #8E5BBF 100%);
+    background: linear-gradient(135deg, #F4A7C0 0%, #EE82A5 100%);
 }
 
 /* ===================================
@@ -359,12 +359,12 @@
    UTILIDADES ESPECÍFICAS
    =================================== */
 .text-highlight {
-    color: #9966CC;
+    color: #EE82A5;
     font-weight: 600;
 }
 
 .text-accent {
-    color: #B57EDC;
+    color: #F4A7C0;
     font-weight: 600;
 }
 
