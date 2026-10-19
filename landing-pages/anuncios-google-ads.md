@@ -155,7 +155,7 @@ Cada grupo usa como URL final su landing page nueva en `/landing-pages/`. En el 
 | Coronas Fúnebres | Entrega prioritaria a salas | de velación y cementerios | https://cartagenafloristeria.dondeseria.com/landing-pages/coronas-funebres-cartagena.html |
 | Cajas de Rosas | Corazones y sombrereras | con chocolates y globos | https://cartagenafloristeria.dondeseria.com/landing-pages/floristeria-cartagena.html |
 | Girasoles Frescos | Ramos de girasoles del día | desde $150.000 | https://cartagenafloristeria.dondeseria.com/landing-pages/floristeria-cartagena.html |
-| Pedir por WhatsApp | Atención inmediata | de 8:00 am a 6:00 pm | https://wa.me/573004385227 |
+| Pedir por WhatsApp | Atención inmediata | de 8:00 am a 6:00 pm | https://wa.me/573246245580 |
 
 Nota: el sitelink "Pedir por WhatsApp" no es aceptado por Google como URL de sitelink (debe ir al mismo dominio); usarlo solo como extensión de llamada o cambiar su URL a la landing principal. Alternativa segura: apuntarlo a `/landing-pages/floristeria-cartagena.html#contacto`.
 
@@ -178,7 +178,7 @@ Nota: el sitelink "Pedir por WhatsApp" no es aceptado por Google como URL de sit
 
 ### Extensión de llamada
 
-Teléfono: +57 300 438 5227 · Solo en horario de atención (8:00–18:00).
+Teléfono: +57 324 624 5580 · Solo en horario de atención (8:00–18:00).
 
 ### Extensión de ubicación
 
